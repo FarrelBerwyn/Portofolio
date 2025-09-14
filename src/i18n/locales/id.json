@@ -1,27 +1,7 @@
 {
   "main": {
     "title": "Farrel Chandra Berwyn",
-        "digitalMarketer": {
-        "title": "Pemasar Digital",
-        "location": "Jakarta, Indonesia",
-        "description": "Mengelola kampanye pemasaran media sosial dan strategi konten."
-      },
-      "frontEndEngineer": {
-        "title": "Insinyur Front End",
-        "location": "Jakarta, Indonesia", 
-        "description": "Mengembangkan aplikasi web responsif, mengimplementasikan UI/UX, dan mengoptimalkan kinerja."
-      },
-      "startupFounder": {
-        "title": "Pendiri Startup",
-        "location": "Jakarta, Indonesia",
-        "description": "Pendiri & CMO Dataktif, sebuah perusahaan AI startup yang mengkhususkan diri dalam solusi analitik data on-premise."
-      },
-      "researcher": {
-        "title": "Peneliti",
-        "location": "Jakarta, Indonesia",
-        "description": "Melakukan penelitian SIAGA yang berfokus pada analisis efisiensi navigasi ambulans menggunakan teknologi IoT dan Digital Twin."
-      }
-    },e": "Pendiri Startup & Insinyur Front End"
+    "role": "Pendiri Startup & Insinyur Front End"
   },
   "contact": {
     "title": "Hubungi Saya",
@@ -79,6 +59,21 @@
         "title": "Pemasar Digital",
         "location": "Jakarta, Indonesia",
         "description": "Mengelola kampanye pemasaran media sosial dan strategi konten."
+      },
+      "frontEndEngineer": {
+        "title": "Insinyur Front End",
+        "location": "Jakarta, Indonesia", 
+        "description": "Mengembangkan aplikasi web responsif, mengimplementasikan UI/UX, dan mengoptimalkan kinerja."
+      },
+      "startupFounder": {
+        "title": "Pendiri Startup",
+        "location": "Jakarta, Indonesia",
+        "description": "Pendiri & CMO Dataktif, sebuah perusahaan AI startup yang mengkhususkan diri dalam solusi analitik data on-premise."
+      },
+      "researcher": {
+        "title": "Peneliti",
+        "location": "Jakarta, Indonesia",
+        "description": "Melakukan penelitian SIAGA yang berfokus pada analisis efisiensi navigasi ambulans menggunakan teknologi IoT dan Digital Twin."
       }
     }
   },
