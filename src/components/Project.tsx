@@ -7,8 +7,8 @@ import mock05 from '../assets/images/mock05.png';
 import mock06 from '../assets/images/mock06.png';
 import mock07 from '../assets/images/mock07.png';
 import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
+import mock09 from '../assets/images/siaga-deepvision.png';
+import mock10 from '../assets/images/swift-challenge.jpg';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -17,14 +17,14 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.filmate.club/" target="_blank" rel="noreferrer"><h2>Filmate AI</h2></a>
-                <p>Developed movie finder app with semantic search and sentiment analysis using OpenAI GPT-3.5 Turbo, Qdrant, React, and Flask.</p>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7300519023585214464/" target="_blank" rel="noreferrer"><img src={mock10} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7300519023585214464/" target="_blank" rel="noreferrer"><h2>I CAN!</h2></a>
+                <p>Designed and developed a game that focuses on self-development, especially in building self-confidence when socializing in public and also in society, based on my experience to reduce my anxiety by practicing this game.</p>
             </div>
             <div className="project">
                 <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><img src={mock09} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>High Speed Chase</h2></a>
-                <p>Designed, developed, and launched a 3D multiplayer racing game with C# and Unity. This is available on Itch.io for gamers worldwide to enjoy.</p>
+                <a href="https://yujisatojr.itch.io/highspeedchase" target="_blank" rel="noreferrer"><h2>SIAGA</h2></a>
+                <p>Research to Designed, developed, and launched a 3D Simulation of Combining AI with social responsibility to address healthcare challenges. Highlighting “Assessing Ambulance with AI” through SIAGA — an AI-powered emergency and healthcare system that integrates data, algorithms, and infrastructure for faster, more responsive services.</p>
             </div>
             <div className="project">
                 <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
