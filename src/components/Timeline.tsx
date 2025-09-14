@@ -7,14 +7,14 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
-function Timeline() {
+export default function Timeline(): React.ReactElement {
   const { t } = useTranslation();
+
   return (
     <div id="history">
       <div className="items-container">
         <h1>{t('timeline.title')}</h1>
         <VerticalTimeline>
-
           {/* Graphic Designer */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -32,80 +32,77 @@ function Timeline() {
           {/* Video Editor */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - present"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date={`2021 - ${t('timeline.present')}`}
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Video Editor</h3>
-            <h4 className="vertical-timeline-element-subtitle">Jakarta, Indonesia</h4>
-            <p>
-              Editing video content for social media, advertisements, and promotional campaigns.
-            </p>
+            <h3 className="vertical-timeline-element-title">{t('timeline.jobs.videoEditor.title')}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{t('timeline.jobs.videoEditor.location')}</h4>
+            <p>{t('timeline.jobs.videoEditor.description')}</p>
           </VerticalTimelineElement>
 
           {/* Digital Marketer */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - present"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date={`2021 - ${t('timeline.present')}`}
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Digital Marketer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Jakarta, Indonesia</h4>
-            <p>
-              Managing online campaigns, social media strategy, SEO, and digital branding initiatives.
-            </p>
+            <h3 className="vertical-timeline-element-title">{t('timeline.jobs.digitalMarketer.title')}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{t('timeline.jobs.digitalMarketer.location')}</h4>
+            <p>{t('timeline.jobs.digitalMarketer.description')}</p>
           </VerticalTimelineElement>
 
           {/* Front End Engineer */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - present"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date={`2021 - ${t('timeline.present')}`}
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Front End Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Jakarta, Indonesia</h4>
-            <p>
-              Developing responsive web applications, implementing UI/UX, and optimizing performance.
-            </p>
+            <h3 className="vertical-timeline-element-title">{t('timeline.jobs.frontEndEngineer.title')}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{t('timeline.jobs.frontEndEngineer.location')}</h4>
+            <p>{t('timeline.jobs.frontEndEngineer.description')}</p>
           </VerticalTimelineElement>
 
           {/* Startup Founder */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2024 - present"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date={`2024 - ${t('timeline.present')}`}
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Startup Founder</h3>
-            <h4 className="vertical-timeline-element-subtitle">Jakarta, Indonesia</h4>
-            <p>
-              Founder & CMO of Dataktif, a startup AI company specializing in on-premise data analytics solutions.
-            </p>
+            <h3 className="vertical-timeline-element-title">{t('timeline.jobs.startupFounder.title')}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{t('timeline.jobs.startupFounder.location')}</h4>
+            <p>{t('timeline.jobs.startupFounder.description')}</p>
           </VerticalTimelineElement>
 
           {/* Researcher */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
             date="2020 - 2020"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Researcher</h3>
-            <h4 className="vertical-timeline-element-subtitle">Jakarta, Indonesia</h4>
-            <p>
-            Conducted SIAGA research focused on analyzing ambulance navigation efficiency using IoT and Digital Twin technologies.
-            </p>
+            <h3 className="vertical-timeline-element-title">{t('timeline.jobs.researcher.title')}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{t('timeline.jobs.researcher.location')}</h4>
+            <p>{t('timeline.jobs.researcher.description')}</p>
           </VerticalTimelineElement>
-
         </VerticalTimeline>
       </div>
     </div>
   );
 }
-
-export default Timeline;
 
 
 

@@ -1,7 +1,27 @@
 {
   "main": {
     "title": "Farrel Chandra Berwyn",
-    "role": "Startup Founder & Front End Engineer"
+        "digitalMarketer": {
+        "title": "Digital Marketer",
+        "location": "Jakarta, Indonesia",
+        "description": "Managing social media marketing campaigns and content strategies."
+      },
+      "frontEndEngineer": {
+        "title": "Front End Engineer",
+        "location": "Jakarta, Indonesia",
+        "description": "Developing responsive web applications, implementing UI/UX, and optimizing performance."
+      },
+      "startupFounder": {
+        "title": "Startup Founder",
+        "location": "Jakarta, Indonesia",
+        "description": "Founder & CMO of Dataktif, a startup AI company specializing in on-premise data analytics solutions."
+      },
+      "researcher": {
+        "title": "Researcher",
+        "location": "Jakarta, Indonesia",
+        "description": "Conducted SIAGA research focused on analyzing ambulance navigation efficiency using IoT and Digital Twin technologies."
+      }
+    },e": "Startup Founder & Front End Engineer"
   },
   "contact": {
     "title": "Get in Touch",
@@ -54,6 +74,11 @@
         "title": "Video Editor",
         "location": "Jakarta, Indonesia",
         "description": "Editing and producing video content for various platforms and clients."
+      },
+      "digitalMarketer": {
+        "title": "Digital Marketer",
+        "location": "Jakarta, Indonesia",
+        "description": "Managing social media marketing campaigns and content strategies."
       }
     }
   },
