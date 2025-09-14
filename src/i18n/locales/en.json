@@ -6,7 +6,6 @@
   "contact": {
     "title": "Get in Touch",
     "description": "Feel free to reach out if you want to collaborate with me, or simply have a chat.",
-    "sendButton": "Send Message",
     "form": {
       "name": "Name",
       "email": "Email",
@@ -30,7 +29,8 @@
     "mobile": {
       "title": "Mobile Development",
       "description": "Creating cross-platform mobile applications using React Native"
-    }
+    },
+    "technologies": "Technologies"
   },
   "projects": {
     "title": "My Projects",
@@ -54,5 +54,4 @@
       "instagram": "Instagram"
     }
   }
-}
 }

@@ -85,7 +85,7 @@ function Timeline() {
             </p>
           </VerticalTimelineElement>
 
-          {/* Data Analyst Intern */}
+          {/* Researcher */}
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2020 - 2020"

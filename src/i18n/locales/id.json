@@ -6,7 +6,6 @@
   "contact": {
     "title": "Hubungi Saya",
     "description": "Jangan ragu untuk menghubungi saya jika Anda ingin berkolaborasi atau sekadar mengobrol.",
-    "sendButton": "Kirim Pesan",
     "form": {
       "name": "Nama",
       "email": "Email",
@@ -21,7 +20,7 @@
     "description": "Saya telah menghabiskan beberapa tahun untuk mengembangkan keahlian saya. Berikut adalah bidang-bidang yang saya kuasai.",
     "frontEnd": {
       "title": "Pengembangan Front End",
-      "description": "Pengalaman dengan React.js, membangun website dan aplikasi web yang responsif"
+      "description": "Berpengalaman dengan React.js, membangun website dan aplikasi web yang responsif"
     },
     "backEnd": {
       "title": "Pengembangan Back End",
@@ -30,7 +29,8 @@
     "mobile": {
       "title": "Pengembangan Mobile",
       "description": "Membuat aplikasi mobile lintas platform menggunakan React Native"
-    }
+    },
+    "technologies": "Teknologi"
   },
   "projects": {
     "title": "Proyek Saya",
@@ -54,5 +54,4 @@
       "instagram": "Instagram"
     }
   }
-}
 }
