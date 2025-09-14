@@ -6,18 +6,53 @@
   "contact": {
     "title": "Hubungi Saya",
     "description": "Jangan ragu untuk menghubungi saya jika Anda ingin berkolaborasi atau sekadar mengobrol.",
-    "sendButton": "Kirim Pesan"
+    "sendButton": "Kirim Pesan",
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "message": "Pesan",
+      "namePlaceholder": "Masukkan nama Anda",
+      "emailPlaceholder": "Masukkan email Anda",
+      "messagePlaceholder": "Tulis pesan Anda di sini..."
+    }
   },
   "expertise": {
     "title": "Keahlian Saya",
-    "description": "Saya telah menghabiskan beberapa tahun untuk mengembangkan keahlian saya. Berikut adalah bidang-bidang yang saya kuasai."
+    "description": "Saya telah menghabiskan beberapa tahun untuk mengembangkan keahlian saya. Berikut adalah bidang-bidang yang saya kuasai.",
+    "frontEnd": {
+      "title": "Pengembangan Front End",
+      "description": "Pengalaman dengan React.js, membangun website dan aplikasi web yang responsif"
+    },
+    "backEnd": {
+      "title": "Pengembangan Back End",
+      "description": "Bekerja dengan server, database, dan API menggunakan Node.js dan Express"
+    },
+    "mobile": {
+      "title": "Pengembangan Mobile",
+      "description": "Membuat aplikasi mobile lintas platform menggunakan React Native"
+    }
   },
   "projects": {
     "title": "Proyek Saya",
-    "description": "Berikut adalah beberapa proyek terbaik saya."
+    "description": "Berikut adalah beberapa proyek terbaik saya.",
+    "viewProject": "Lihat Proyek",
+    "technologies": "Teknologi yang Digunakan"
   },
   "timeline": {
     "title": "Perjalanan Saya",
-    "description": "Berikut adalah gambaran singkat perjalanan akademis dan profesional saya."
+    "description": "Berikut adalah gambaran singkat perjalanan akademis dan profesional saya.",
+    "education": "Pendidikan",
+    "experience": "Pengalaman",
+    "present": "Sekarang"
+  },
+  "footer": {
+    "copyright": "© 2025 Farrel Chandra Berwyn. Hak cipta dilindungi undang-undang.",
+    "social": {
+      "follow": "Ikuti saya di",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    }
   }
+}
 }

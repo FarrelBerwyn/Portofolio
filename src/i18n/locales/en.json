@@ -6,18 +6,53 @@
   "contact": {
     "title": "Get in Touch",
     "description": "Feel free to reach out if you want to collaborate with me, or simply have a chat.",
-    "sendButton": "Send Message"
+    "sendButton": "Send Message",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email",
+      "messagePlaceholder": "Write your message here..."
+    }
   },
   "expertise": {
     "title": "My Expertise",
-    "description": "I've spent several years working on my skills. Here are the areas where I specialize in."
+    "description": "I've spent several years working on my skills. Here are the areas where I specialize in.",
+    "frontEnd": {
+      "title": "Front End Development",
+      "description": "Experience with React.js, building responsive websites and web applications"
+    },
+    "backEnd": {
+      "title": "Back End Development",
+      "description": "Working with servers, databases, and APIs using Node.js and Express"
+    },
+    "mobile": {
+      "title": "Mobile Development",
+      "description": "Creating cross-platform mobile applications using React Native"
+    }
   },
   "projects": {
     "title": "My Projects",
-    "description": "Here are some of my best projects."
+    "description": "Here are some of my best projects.",
+    "viewProject": "View Project",
+    "technologies": "Technologies Used"
   },
   "timeline": {
     "title": "My Journey",
-    "description": "Here's a brief overview of my academic and professional journey."
+    "description": "Here's a brief overview of my academic and professional journey.",
+    "education": "Education",
+    "experience": "Experience",
+    "present": "Present"
+  },
+  "footer": {
+    "copyright": "© 2025 Farrel Chandra Berwyn. All rights reserved.",
+    "social": {
+      "follow": "Follow me on",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    }
   }
+}
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
@@ -7,10 +8,11 @@ import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
 
 function Timeline() {
+  const { t } = useTranslation();
   return (
     <div id="history">
       <div className="items-container">
-        <h1>Career History</h1>
+        <h1>{t('timeline.title')}</h1>
         <VerticalTimeline>
 
           {/* Graphic Designer */}
@@ -18,15 +20,13 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2020 - present"
+            date={`2020 - ${t('timeline.present')}`}
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Graphic Designer</h3>
+            <h3 className="vertical-timeline-element-title">{t('timeline.experience')}</h3>
             <h4 className="vertical-timeline-element-subtitle">Jakarta, Indonesia</h4>
-            <p>
-              Creating visual designs for digital and print media, brand identity, and marketing assets.
-            </p>
+            <p>{t('timeline.description')}</p>
           </VerticalTimelineElement>
 
           {/* Video Editor */}

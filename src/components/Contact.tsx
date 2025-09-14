@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import '../assets/styles/Contact.scss';
 // import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
@@ -7,6 +8,7 @@ import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
 
 function Contact() {
+  const { t } = useTranslation();
 
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
@@ -53,8 +55,8 @@ function Contact() {
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
-          <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          <h1>{t('contact.title')}</h1>
+          <p>{t('contact.description')}</p>
           <Box
             ref={form}
             component="form"
@@ -66,8 +68,8 @@ function Contact() {
               <TextField
                 required
                 id="outlined-required"
-                label="Your Name"
-                placeholder="What's your name?"
+                label={t('contact.form.name')}
+                placeholder={t('contact.form.namePlaceholder')}
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value);
@@ -78,8 +80,8 @@ function Contact() {
               <TextField
                 required
                 id="outlined-required"
-                label="Email / Phone"
-                placeholder="How can I reach you?"
+                label={t('contact.form.email')}
+                placeholder={t('contact.form.emailPlaceholder')}
                 value={email}
                 onChange={(e) => {
                   setEmail(e.target.value);
@@ -91,8 +93,8 @@ function Contact() {
             <TextField
               required
               id="outlined-multiline-static"
-              label="Message"
-              placeholder="Send me any inquiries or questions"
+              label={t('contact.form.message')}
+              placeholder={t('contact.form.messagePlaceholder')}
               multiline
               rows={10}
               className="body-form"
