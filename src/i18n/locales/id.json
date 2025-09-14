@@ -39,11 +39,23 @@
     "technologies": "Teknologi yang Digunakan"
   },
   "timeline": {
-    "title": "Perjalanan Saya",
-    "description": "Berikut adalah gambaran singkat perjalanan akademis dan profesional saya.",
+    "title": "Riwayat Karier",
+    "description": "Berikut adalah gambaran singkat perjalanan profesional saya.",
     "education": "Pendidikan",
     "experience": "Pengalaman",
-    "present": "Sekarang"
+    "present": "Sekarang",
+    "jobs": {
+      "graphicDesigner": {
+        "title": "Desainer Grafis",
+        "location": "Jakarta, Indonesia",
+        "description": "Membuat desain visual untuk media digital dan cetak, identitas merek, dan aset pemasaran."
+      },
+      "videoEditor": {
+        "title": "Editor Video",
+        "location": "Jakarta, Indonesia",
+        "description": "Mengedit dan memproduksi konten video untuk berbagai platform dan klien."
+      }
+    }
   },
   "footer": {
     "copyright": "© 2025 Farrel Chandra Berwyn. Hak cipta dilindungi undang-undang.",

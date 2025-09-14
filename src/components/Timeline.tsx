@@ -24,9 +24,9 @@ function Timeline() {
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">{t('timeline.experience')}</h3>
-            <h4 className="vertical-timeline-element-subtitle">Jakarta, Indonesia</h4>
-            <p>{t('timeline.description')}</p>
+            <h3 className="vertical-timeline-element-title">{t('timeline.jobs.graphicDesigner.title')}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{t('timeline.jobs.graphicDesigner.location')}</h4>
+            <p>{t('timeline.jobs.graphicDesigner.description')}</p>
           </VerticalTimelineElement>
 
           {/* Video Editor */}

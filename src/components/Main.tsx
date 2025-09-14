@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import LanguageToggle from './LanguageToggle';
 import '../assets/styles/Main.scss';
 
 function Main() {
@@ -21,7 +20,6 @@ function Main() {
             <a href="https://www.linkedin.com/in/farrel-berwyn" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
             <a href="https://www.instagram.com/farrel_berwyn" target="_blank" rel="noreferrer"><InstagramIcon/></a>
           </div>
-          <LanguageToggle />
           <h1>{t('main.title')}</h1>
           <p>{t('main.role')}</p>
 

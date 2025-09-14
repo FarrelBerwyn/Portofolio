@@ -10,6 +10,7 @@ import {
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
+import LanguageToggle from "./components/LanguageToggle";
 
 function App() {
     const [mode, setMode] = useState<string>('dark');
@@ -29,6 +30,7 @@ function App() {
     return (
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
+        {/* <LanguageToggle /> */}
         <FadeIn transitionDuration={700}>
             <Main/>
             <Expertise/>

@@ -16,7 +16,7 @@ function LanguageToggle() {
 
   return (
     <div className="language-toggle" onClick={toggleLanguage}>
-      <div className={`flag-icon ${currentLang === 'en' ? 'flag-us' : 'flag-id'}`}>
+      <div color="black" className={`flag-icon ${currentLang === 'en' ? 'flag-us' : 'flag-id'}`}>
         {currentLang === 'en' ? '🇺🇸' : '🇮🇩'}
       </div>
     </div>

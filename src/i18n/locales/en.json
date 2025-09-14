@@ -39,11 +39,23 @@
     "technologies": "Technologies Used"
   },
   "timeline": {
-    "title": "My Journey",
-    "description": "Here's a brief overview of my academic and professional journey.",
+    "title": "Career History",
+    "description": "Here's a brief overview of my professional journey.",
     "education": "Education",
     "experience": "Experience",
-    "present": "Present"
+    "present": "Present",
+    "jobs": {
+      "graphicDesigner": {
+        "title": "Graphic Designer",
+        "location": "Jakarta, Indonesia",
+        "description": "Creating visual designs for digital and print media, brand identity, and marketing assets."
+      },
+      "videoEditor": {
+        "title": "Video Editor",
+        "location": "Jakarta, Indonesia",
+        "description": "Editing and producing video content for various platforms and clients."
+      }
+    }
   },
   "footer": {
     "copyright": "© 2025 Farrel Chandra Berwyn. All rights reserved.",
