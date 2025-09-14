@@ -1,0 +1,31 @@
+.language-toggle {
+  position: fixed;
+  top: 20px;
+  right: 80px; // Position next to theme toggle
+  z-index: 1000;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .flag-icon {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+// Mobile responsive
+@media (max-width: 768px) {
+  .language-toggle {
+    top: 10px;
+    right: 60px;
+  }
+}

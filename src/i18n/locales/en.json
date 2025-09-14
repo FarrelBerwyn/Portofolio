@@ -1,0 +1,23 @@
+{
+  "main": {
+    "title": "Farrel Chandra Berwyn",
+    "role": "Startup Founder & Front End Engineer"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Feel free to reach out if you want to collaborate with me, or simply have a chat.",
+    "sendButton": "Send Message"
+  },
+  "expertise": {
+    "title": "My Expertise",
+    "description": "I've spent several years working on my skills. Here are the areas where I specialize in."
+  },
+  "projects": {
+    "title": "My Projects",
+    "description": "Here are some of my best projects."
+  },
+  "timeline": {
+    "title": "My Journey",
+    "description": "Here's a brief overview of my academic and professional journey."
+  }
+}

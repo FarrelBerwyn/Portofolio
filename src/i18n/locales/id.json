@@ -1,0 +1,23 @@
+{
+  "main": {
+    "title": "Farrel Chandra Berwyn",
+    "role": "Pendiri Startup & Insinyur Front End"
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "description": "Jangan ragu untuk menghubungi saya jika Anda ingin berkolaborasi atau sekadar mengobrol.",
+    "sendButton": "Kirim Pesan"
+  },
+  "expertise": {
+    "title": "Keahlian Saya",
+    "description": "Saya telah menghabiskan beberapa tahun untuk mengembangkan keahlian saya. Berikut adalah bidang-bidang yang saya kuasai."
+  },
+  "projects": {
+    "title": "Proyek Saya",
+    "description": "Berikut adalah beberapa proyek terbaik saya."
+  },
+  "timeline": {
+    "title": "Perjalanan Saya",
+    "description": "Berikut adalah gambaran singkat perjalanan akademis dan profesional saya."
+  }
+}
