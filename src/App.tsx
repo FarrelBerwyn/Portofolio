@@ -1,5 +1,14 @@
-import React, {useState} from "react";
-import { Main } from "./components";
+import React, {useState, useEffect} from "react";
+import {
+  Main,
+  Timeline,
+  Expertise,
+  Project,
+  Contact,
+  Navigation,
+  Footer,
+} from "./components";
+import FadeIn from './components/FadeIn';
 import './index.scss';
 
 function App() {
@@ -13,9 +22,21 @@ function App() {
         }
     }
 
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
+
     return (
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-        <Main />
+        <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
+        <FadeIn transitionDuration={700}>
+            <Main/>
+            <Expertise/>
+            <Timeline/>
+            <Project/>
+            <Contact/>
+        </FadeIn>
+        <Footer />
     </div>
     );
 }
