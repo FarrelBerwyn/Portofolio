@@ -23,8 +23,8 @@
   --raisin-black: hsla(231, 10%, 14%, 1);
   --roman-silver: hsla(229, 10%, 57%, 1);
   --eerie-black: hsla(228, 9%, 10%, 1);
-  /* --eerie-black: hsla(210, 30%, 20%, 1); */
-  --eerie-black: hsla(210, 25%, 22%, 1);
+  --eerie-black: hsla(210, 30%, 20%, 1);
+  /* --eerie-black: hsla(210, 25%, 22%, 1); */
   --black: hsla(0, 0%, 0%, 1);
   --white: hsla(0, 0%, 100%, 1);
   --white_a10: hsla(0, 0%, 100%, 0.1);
