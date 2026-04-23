@@ -1,0 +1,12 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^\"d:/Farrel Folder/Portofolio/farrel-portofolio-v2/\\.venv/Scripts/python\\.exe\" -c \"\nfrom PyPDF2 import PdfReader\npdf = PdfReader\\('d:/Farrel Folder/FarrelChandraBerwyn_CV_Academy\\.pdf'\\)\nfor page in pdf\\.pages:\n    print\\(page\\.extract_text\\(\\)\\)\n\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^&\"d:/Farrel Folder/Portofolio/farrel-portofolio-v2/\\.venv/Scripts/python\\.exe\" \"d:/Farrel Folder/Portofolio/farrel-portofolio-v2/extract_pdf\\.py\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
