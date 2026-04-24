@@ -136,11 +136,10 @@ body {
   color: var(--roman-silver);
   font-size: 1.6rem;
   line-height: 1.75;
-  overflow: hidden;
+  overflow: auto;
 }
 
-body.loaded { overflow: overlay; }
-
+/* when nav is open we prevent body scroll */
 body.nav-active { overflow: hidden; }
 
 ::-webkit-scrollbar { width: 5px; }
