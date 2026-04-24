@@ -21,8 +21,16 @@ const addEventOnElements = function (elements, eventType, callback) {
 const preloader = document.querySelector("[data-preloader]");
 
 window.addEventListener("DOMContentLoaded", function () {
-  if (preloader) preloader.classList.add("loaded");
-  document.body.classList.add("loaded");
+  try {
+    if (preloader && preloader.classList) preloader.classList.add("loaded");
+  } catch (err) {
+    console.warn('preloader handling failed:', err);
+  }
+  try {
+    if (document && document.body && document.body.classList) document.body.classList.add("loaded");
+  } catch (err) {
+    console.warn('failed to add body.loaded:', err);
+  }
 });
 
 // Load JSON data and render dynamic sections before initializing sliders
@@ -148,6 +156,7 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 const header = document.querySelector("[data-header]");
 
 window.addEventListener("scroll", function () {
+  if (!header) return;
   if (window.scrollY >= 100) {
     header.classList.add("active");
   } else {
