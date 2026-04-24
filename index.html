@@ -19,30 +19,8 @@
       <section class="section hero" aria-label="home">
         <div class="container">
 
-          <div class="hero-content">
-
-            <h1 class="h1 hero-title">Farrel Berwyn</h1>
-
-            <p class="hero-subtitle">
-              Youth Startup Founder | Full-Stack Developer
-            </p>
-
-            <div class="hero-banner">
-              <img src="./assets/images/berwyn-banner.jpg" width="600" height="600" alt="kane williams" class="h-100 w-100">
-              <!-- <img src="./assets/images/berwyn-banner.jpg" width="300" height="300" alt="Farrel Berwyn" style="width:100px;height:400px;object-fit:cover;max-width:100%;">
-              <img src="./assets/images/berwyn-banner.jpg" alt="Farrel Berwyn" class="hero-banner__img"> -->
-            </div>
-
-            <p class="section-text">
-              Hi, I'm Farrel Chandra Berwyn, an Apple Swift Student Challenge Winner passionate about integrating artificial intelligence, robotics, and intelligent systems to develop scalable real-world technologies. Specializing in AI/ML, full-stack development, and computer vision solutions.
-            </p>
-
-            <a href="./assets/files/FarrelChandraBerwyn_CV.pdf" class="btn has-before" download>
-              <span class="span">Download CV</span>
-
-              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
-            </a>
-
+          <div class="hero-content" data-hero>
+            <!-- Hero content will be rendered from assets/data/site.json -->
           </div>
 
         </div>
@@ -167,128 +145,8 @@
 
           <div class="slider" data-slider>
 
-            <ul class="slider-container service-list" data-slider-container>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="desktop-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">AI & Machine Learning Solutions</h3>
-
-                  <p class="card-text">
-                    Developing intelligent systems using deep learning, computer vision, and reinforcement learning. Specialized in neural networks, image classification, and real-world AI deployment.
-                  </p>
-
-                  <span class="text-lg card-number">01</span>
-
-                  <a href="#" class="layer-link" aria-label="More about my website design service"></a>
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="podium-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Full-Stack Web Development</h3>
-
-                  <p class="card-text">
-                    Building responsive and scalable web applications using React, Node.js, and JavaScript. Creating intuitive user interfaces and robust backend systems with optimized performance.
-                  </p>
-
-                  <span class="text-lg card-number">02</span>
-
-                  <a href="#" class="layer-link" aria-label="More about my SEO Marketing service"></a>
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="basket-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Computer Vision & Image Processing</h3>
-
-                  <p class="card-text">
-                    Advanced image classification, object detection, and video analysis using OpenCV, YOLO, and TensorFlow. Building visual intelligence systems for real-world applications.
-                  </p>
-
-                  <span class="text-lg card-number">03</span>
-
-                  <a href="#" class="layer-link" aria-label="More about my eCommerce service"></a>
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="color-filter-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Mobile App Development</h3>
-
-                  <p class="card-text">
-                    Creating cross-platform mobile applications using Flutter and Swift. Designing intuitive UX/UI and implementing feature-rich applications with seamless performance.
-                  </p>
-
-                  <span class="text-lg card-number">04</span>
-
-                  <a href="#" class="layer-link" aria-label="More about my Graphic Design service"></a>
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="megaphone-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Data Analytics & Solutions</h3>
-
-                  <p class="card-text">
-                    Implementing data-driven solutions using Python, Pandas, and SQL. Transforming raw data into actionable insights for business intelligence and decision-making.
-                  </p>
-
-                  <span class="text-lg card-number">05</span>
-
-                  <a href="#" class="layer-link" aria-label="More about my Digital Marketing service"></a>
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Technical Consulting & Architecture</h3>
-
-                  <p class="card-text">
-                    Providing strategic guidance on technology solutions, system design, and innovation implementation. Helping organizations leverage AI and advanced technologies effectively.
-                  </p>
-
-                  <span class="text-lg card-number">06</span>
-
-                  <a href="#" class="layer-link" aria-label="More about my Social Media service"></a>
-
-                </div>
-              </li>
-
+            <ul class="slider-container service-list" data-service-list data-slider-container>
+              <!-- Services will be rendered here from assets/data/site.json -->
             </ul>
 
             <div class="slider-controls">
@@ -569,7 +427,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+      <footer class="footer">
     <div class="container">
 
       <ul class="footer-list">
@@ -579,7 +437,7 @@
         </li>
 
         <li>
-          <a href="mailto:farrel.berwyn18@gmail.com" class="footer-link">farrel.berwyn18@gmail.com</a>
+          <a href="#" class="footer-link" data-footer-email></a>
         </li>
 
       </ul>
@@ -591,37 +449,13 @@
         </li>
 
         <li>
-          <a href="#" class="footer-link">South Jakarta — Daerah Khusus Jakarta</a>
+          <a href="#" class="footer-link" data-footer-location></a>
         </li>
 
       </ul>
 
-      <ul class="social-list">
-
-        <li>
-          <a href="https://www.instagram.com/farrel_berwyn/" class="social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/farrel-berwyn/" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-dribbble"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-skype"></ion-icon>
-          </a>
-        </li>
-
+      <ul class="social-list" data-footer-social>
+        <!-- Social links will be rendered from assets/data/site.json -->
       </ul>
 
     </div>

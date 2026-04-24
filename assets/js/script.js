@@ -105,8 +105,82 @@ const renderBlog = (items) => {
 }
 
 const loadAndRender = async () => {
+  const siteData = await fetchJSON('./assets/data/site.json');
   const portfolioData = await fetchJSON('./assets/data/portfolio.json');
   const contentData = await fetchJSON('./assets/data/content.json');
+
+  if (siteData) {
+    // render hero
+    const heroRoot = document.querySelector('[data-hero]');
+    if (heroRoot) {
+      heroRoot.innerHTML = `
+        <h1 class="h1 hero-title">${siteData.hero.title}</h1>
+        <p class="hero-subtitle">${siteData.hero.subtitle}</p>
+        <div class="hero-banner">
+          <img src="${siteData.hero.banner}" width="600" height="600" alt="${siteData.hero.title}" class="h-100 w-100">
+        </div>
+        <p class="section-text">${siteData.hero.bio}</p>
+        <a href="${siteData.hero.cv}" class="btn has-before" download>
+          <span class="span">${siteData.hero.cvLabel}</span>
+          <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+        </a>
+      `;
+    }
+
+    // render skills
+    const skillsRoot = document.querySelector('[data-skills-list]');
+    if (skillsRoot && Array.isArray(siteData.skills)) {
+      skillsRoot.innerHTML = '';
+      siteData.skills.forEach(s => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <div class="progress-wrapper">
+            <p class="progress-label">${s.label}</p>
+            <data class="progress-value" value="${s.value}">${s.value}%</data>
+          </div>
+          <div class="progress-bg"><div class="progress" style="width: ${s.value}%;"></div></div>
+        `;
+        skillsRoot.appendChild(li);
+      });
+    }
+
+    // render services
+    const servicesRoot = document.querySelector('[data-service-list]');
+    if (servicesRoot && Array.isArray(siteData.services)) {
+      servicesRoot.innerHTML = '';
+      siteData.services.forEach((svc, idx) => {
+        const li = document.createElement('li');
+        li.className = 'slider-item';
+        li.innerHTML = `
+          <div class="service-card">
+            <div class="card-icon"><ion-icon name="${svc.icon}"></ion-icon></div>
+            <h3 class="h3 card-title">${svc.title}</h3>
+            <p class="card-text">${svc.text}</p>
+            <span class="text-lg card-number">${String(idx+1).padStart(2,'0')}</span>
+            <a href="#" class="layer-link"></a>
+          </div>
+        `;
+        servicesRoot.appendChild(li);
+      });
+    }
+
+    // render footer
+    if (siteData.footer) {
+      const emailEl = document.querySelector('[data-footer-email]');
+      const locEl = document.querySelector('[data-footer-location]');
+      const socialRoot = document.querySelector('[data-footer-social]');
+      if (emailEl) emailEl.textContent = siteData.footer.email;
+      if (emailEl) emailEl.setAttribute('href', `mailto:${siteData.footer.email}`);
+      if (locEl) locEl.textContent = siteData.footer.location;
+      if (socialRoot) {
+        socialRoot.innerHTML = '';
+        const soc = siteData.footer.social || {};
+        if (soc.instagram) socialRoot.innerHTML += `<li><a href="${soc.instagram}" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>`;
+        if (soc.linkedin) socialRoot.innerHTML += `<li><a href="${soc.linkedin}" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>`;
+      }
+    }
+  }
+
   if (portfolioData) renderPortfolio(portfolioData);
   if (contentData) {
     renderList('[data-education-list]', contentData.education, 'education');

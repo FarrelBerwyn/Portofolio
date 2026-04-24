@@ -1,0 +1,32 @@
+{
+  "hero": {
+    "title": "Farrel Chandra Berwyn",
+    "subtitle": "Apple Developer Academy Student & AI Solutions Developer",
+    "banner": "./assets/images/berwyn-banner.jpg",
+    "bio": "Hi, I'm Farrel Chandra Berwyn, an Apple Swift Student Challenge Winner passionate about integrating artificial intelligence, robotics, and intelligent systems to develop scalable real-world technologies.",
+    "cv": "./assets/files/FarrelChandraBerwyn_CV.pdf",
+    "cvLabel": "Download CV"
+  },
+  "skills": [
+    { "label": "AI & Machine Learning", "value": 90 },
+    { "label": "Python & Swift Programming", "value": 85 },
+    { "label": "Full-Stack Development", "value": 80 },
+    { "label": "Computer Vision & Deep Learning", "value": 88 }
+  ],
+  "services": [
+    { "icon": "desktop-outline", "title": "AI & Machine Learning Solutions", "text": "Developing intelligent systems using deep learning, computer vision, and reinforcement learning." },
+    { "icon": "podium-outline", "title": "Full-Stack Web Development", "text": "Building responsive and scalable web applications using React, Node.js, and JavaScript." },
+    { "icon": "basket-outline", "title": "Computer Vision & Image Processing", "text": "Advanced image classification, object detection, and video analysis using OpenCV and YOLO." },
+    { "icon": "color-filter-outline", "title": "Mobile App Development", "text": "Creating cross-platform mobile applications using Flutter and Swift." },
+    { "icon": "megaphone-outline", "title": "Data Analytics & Solutions", "text": "Implementing data-driven solutions using Python, Pandas, and SQL." },
+    { "icon": "chatbubbles-outline", "title": "Technical Consulting & Architecture", "text": "Strategic guidance on system design, architecture, and AI adoption." }
+  ],
+  "footer": {
+    "email": "farrel.berwyn18@gmail.com",
+    "location": "South Jakarta — Daerah Khusus Jakarta",
+    "social": {
+      "instagram": "https://www.instagram.com/farrel_berwyn/",
+      "linkedin": "https://www.linkedin.com/in/farrel-berwyn/"
+    }
+  }
+}
