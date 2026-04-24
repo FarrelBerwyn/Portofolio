@@ -1,0 +1,38 @@
+[
+  {
+    "image": "./assets/images/portfolio-1.jpg",
+    "title": "SIAGA - AI Emergency Navigation System",
+    "text": "AI & Reinforcement Learning",
+    "link": "./portfolio/siaga.html"
+  },
+  {
+    "image": "./assets/images/portfolio-2.jpg",
+    "title": "Real-Time Ambulance Routing",
+    "text": "IoT Simulation / Decision Modeling",
+    "link": "./portfolio/real-time-ambulance.html"
+  },
+  {
+    "image": "./assets/images/portfolio-3.jpg",
+    "title": "Smart Infrastructure Platform",
+    "text": "Full-Stack / AI Integration",
+    "link": "./portfolio/smart-infrastructure.html"
+  },
+  {
+    "image": "./assets/images/portfolio-4.jpg",
+    "title": "Computer Vision Applications",
+    "text": "Image Classification / Detection",
+    "link": "./portfolio/computer-vision.html"
+  },
+  {
+    "image": "./assets/images/portfolio-5.jpg",
+    "title": "Mobile-First Web Applications",
+    "text": "React / Node.js / Flutter",
+    "link": "./portfolio/mobile-apps.html"
+  },
+  {
+    "image": "./assets/images/portfolio-6.jpg",
+    "title": "Data-Driven Analytics Dashboard",
+    "text": "Python / SQL / Data Visualization",
+    "link": "./portfolio/analytics-dashboard.html"
+  }
+]

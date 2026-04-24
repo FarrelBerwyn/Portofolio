@@ -5,114 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="slider" data-slider>
 
-  <!-- 
-    - primary meta tags
-  -->
-  <!-- <title>Farrel Berwyn - Web & App Developer</title> -->
-  <title>Portofolio | Farrel Berwyn</title>
-  <meta name="title" content="Kane Williams - Web & App Developer">
-  <meta name="description" content="This is a personal portfolio html template made by codewithsadee">
+          <ul class="slider-container" data-slider-container>
+            <!-- Portfolio items will be rendered here from assets/data/portfolio.json -->
+          </ul>
 
-  <!-- 
-    - favicon
-  -->
-  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- 
-    - custom css link
-  -->
-  <!-- add version query to force reload when CSS changes -->
-  <!-- <link rel="stylesheet" href="./assets/css/style.css?v=2"> -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
-
-</head>
-
-<body>
-
-  <!-- 
-    - #PRELOADER
-  -->
-
-  <div class="preloader" data-preloader>
-    <div class="circle"></div>
-  </div>
-
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="#" class="logo">
-        <!-- <img src="./assets/images/logo.svg" width="170" height="40" alt="Pfolio home"> -->
-        <h2 class="h2">Berwynolio</h2>
-      </a>
-
-      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-      </button>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Resume</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Services</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
 
       <!-- 
         - #HERO
@@ -576,23 +474,7 @@
             </div>
           </div>
           <div class="skills-wrapper" style="display: block;">
-            <ul class="skills-list" style="list-style: none;">
-              <li style="margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.2rem; font-weight: 700;">SMAN 47 Jakarta</p>
-                </div>
-                <p class="card-text" style="margin-top: 10px;"><strong>Science and Social Studies</strong></p>
-                <p class="card-text" style="color: var(--roman-silver);">2025-2026 • Academic Average: 85+</p>
-              </li>
-              <li style="margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.2rem; font-weight: 700;">Senior Secondary Khalifa IMS</p>
-                </div>
-                <p class="card-text" style="margin-top: 10px;"><strong>Science and Technology</strong></p>
-                <p class="card-text" style="color: var(--roman-silver);">2023-2025 • South Tangerang</p>
-                <p class="card-text" style="margin-top: 8px; color: var(--roman-silver); font-size: 0.9rem;">10 national curriculum subjects & 6 Cambridge subjects | Completed research on neural networks</p>
-              </li>
-            </ul>
+            <ul class="skills-list" data-education-list style="list-style: none;"></ul>
           </div>
         </div>
       </section>
@@ -612,43 +494,7 @@
             </div>
           </div>
           <div class="skills-wrapper" style="display: block;">
-            <ul class="skills-list" style="list-style: none;">
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">Techniqto - Founder & Chief of Community</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2025 • Present</p>
-                <p class="card-text" style="margin-top: 10px; color: var(--roman-silver);">Built learning community focused on programming, robotics, and innovation with 80+ members</p>
-              </li>
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">PT. Teknologi Kecerdasan Sinergi - Founder & CMO</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2024 • Present</p>
-                <p class="card-text" style="margin-top: 10px; color: var(--roman-silver);">Deployed and adopted AI & data analytics solutions; Collaborated with technical teams translating AI concepts into real-world applications</p>
-              </li>
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">Swift Student Cafe, iHub Binus University - Tech Mentor</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2026</p>
-                <p class="card-text" style="margin-top: 10px; color: var(--roman-silver);">Facilitate interactive learning sessions and provide technical assistance to developers</p>
-              </li>
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">PELNI (Indonesian National Shipping) - Front-end Developer</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2022</p>
-                <p class="card-text" style="margin-top: 10px; color: var(--roman-silver);">Developed interface for national shipping system, boosting operational efficiency; Optimized UX to streamline workflows</p>
-              </li>
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">Lenna.ai - Graphic Designer (Internship)</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2020-2021</p>
-                <p class="card-text" style="margin-top: 10px; color: var(--roman-silver);">Developed and designed visual assets for user engagement</p>
-              </li>
-            </ul>
+            <ul class="skills-list" data-experience-list style="list-style: none;"></ul>
           </div>
         </div>
       </section>
@@ -668,27 +514,7 @@
             </div>
           </div>
           <div class="skills-wrapper" style="display: block;">
-            <ul class="skills-list" style="list-style: none;">
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px; border-left: 4px solid var(--raisin-black);">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">🏆 Winner Swift Student Challenge 2025</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">Apple Inc. | 2025</p>
-                <p class="card-text" style="margin-top: 10px; color: var(--roman-silver);">Recognized Apple Winner for innovative Swift application development</p>
-              </li>
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1rem; font-weight: 700;">Modern Computer Vision and Generative AI</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2023</p>
-              </li>
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1rem; font-weight: 700;">PyTorch and Tensorflow 2: Deep Learning and Artificial Intelligence</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2023</p>
-              </li>
-            </ul>
+            <ul class="skills-list" data-cert-list style="list-style: none;"></ul>
           </div>
         </div>
       </section>
@@ -708,26 +534,7 @@
             </div>
           </div>
           <div class="skills-wrapper" style="display: block;">
-            <ul class="skills-list" style="list-style: none;">
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">Techniqto - Founder & Chief of Community</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2025 • Founded tech community with 80+ registered members</p>
-              </li>
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">Student Council - Chief of Tech Division</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">2023-2024 • Led digital infrastructure supporting 100+ students</p>
-              </li>
-              <li style="margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;">
-                <div class="progress-wrapper">
-                  <p class="progress-label" style="font-size: 1.1rem; font-weight: 700;">SMAN 47 Jakarta - Ekskul Digital & Teknologi</p>
-                </div>
-                <p class="card-text" style="color: var(--roman-silver); margin-top: 5px;">Active participant in school's technology initiative and tech club</p>
-              </li>
-            </ul>
+            <ul class="skills-list" data-org-list style="list-style: none;"></ul>
           </div>
         </div>
       </section>
@@ -744,110 +551,8 @@
 
           <h2 class="h2 section-title">Latest News</h2>
 
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                  <img src="./assets/images/blog-1.jpg?v=20260424" width="700" height="470" loading="lazy"
-                    alt="Congrats Swift Student Challenge 2025 nyaa ✨🚀" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="time" datetime="2022-06-24">
-                    <span class="span text-lg">28</span>
-                    March 2025
-                  </time>
-
-                  <div>
-                    <h3 class="h3 card-title">Congrats Swift Student Challenge 2025 nyaa</h3>
-
-                    <p class="card-text">
-                      Menyala Kak Farrel @farrel_berwyn🔥 Keep shining, stay inspiring! ✨🚀
-                    </p>
-
-                    <a href="#" class="btn has-before">
-                      <span class="span">Read more</span>
-
-                      <ion-icon name="arrow-forward"></ion-icon>
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                  <img src="./assets/images/blog-2.jpg?v=20260424" width="700" height="470" loading="lazy"
-                    alt="Tahun 2025 adalah tahun keemasan anak muda." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="time" datetime="2022-06-27">
-                    <span class="span text-lg">30</span>
-                    December 2025
-                  </time>
-
-                  <div>
-                    <h3 class="h3 card-title">Tahun 2025 adalah tahun keemasan anak muda.</h3>
-
-                    <p class="card-text">
-                      Selamat sudah menjadi digital creator muda @farrel_berwyn yang berhasil jadi orang terbaik tahun ini 🙌
-                    </p>
-
-                    <a href="#" class="btn has-before">
-                      <span class="span">Read more</span>
-
-                      <ion-icon name="arrow-forward"></ion-icon>
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                  <img src="./assets/images/blog-3.jpg?v=20260424" width="700" height="470" loading="lazy"
-                    alt="Farrel Chandra Berwyn, 16 Tahun, CMO dan Pendiri Startup AI Dataktif" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <time class="time" datetime="2022-06-24">
-                    <span class="span text-lg">26</span>
-                    July 2024
-                  </time>
-
-                  <div>
-                    <h3 class="h3 card-title">Farrel Chandra Berwyn, 16 Tahun, CMO dan Pendiri Startup AI Dataktif</h3>
-
-                    <p class="card-text">
-                      Di usia ketika kebanyakan remaja sibuk dengan aktivitas sekolah dan hobi, Farrel Chandra Berwyn (16) telah menduduki posisi strategis sebagai Chief Marketing Officer (CMO) di Dataktif, startup yang bergerak di bidang kecerdasan buatan (AI) dan analisis data.
-                    </p>
-
-                    <a href="#" class="btn has-before">
-                      <span class="span">Read more</span>
-
-                      <ion-icon name="arrow-forward"></ion-icon>
-                    </a>
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
+          <ul class="blog-list" data-blog-list>
+            <!-- Blog entries will be rendered here from assets/data/content.json -->
           </ul>
 
         </div>
