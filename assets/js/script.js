@@ -49,16 +49,34 @@ const renderPortfolio = (items) => {
   const container = document.querySelector('[data-slider-container]');
   if (!container || !Array.isArray(items)) return;
   container.innerHTML = '';
-  items.forEach(item => {
+  
+  const badges = [
+    { icon: "🚑", title: "~25% Faster", sub: "Emergency Navigation", grad: "linear-gradient(135deg, hsl(0, 75%, 55%), hsl(30, 90%, 55%))" },
+    { icon: "🏆", title: "SSC25 Winner", sub: "Swift Student Challenge 2025", grad: "linear-gradient(135deg, hsl(210, 80%, 55%), hsl(260, 70%, 60%))" },
+    { icon: "🚢", title: "Smart Ticketing", sub: "Maritime Services", grad: "linear-gradient(135deg, hsl(200, 80%, 50%), hsl(170, 70%, 45%))" },
+    { icon: "🤖", title: "10+ AI Agents", sub: "Intelligent Ecosystem", grad: "linear-gradient(135deg, hsl(150, 80%, 50%), hsl(190, 70%, 45%))" },
+    { icon: "📱", title: "Mobile-First UI", sub: "Fully Responsive Layouts", grad: "linear-gradient(135deg, hsl(280, 80%, 55%), hsl(320, 70%, 50%))" },
+    { icon: "📊", title: "Interactive BI", sub: "Data Visualization", grad: "linear-gradient(135deg, hsl(30, 85%, 50%), hsl(10, 70%, 45%))" }
+  ];
+
+  items.forEach((item, idx) => {
+    const badge = badges[idx] || { icon: "📁", title: "Project", sub: "Detail", grad: "linear-gradient(135deg, #333, #555)" };
     const li = document.createElement('li');
-    li.className = 'slider-item';
+    li.className = 'slider-item reveal';
+    li.setAttribute('data-slider-item', '');
+    
     li.innerHTML = `
-      <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
-        <img src="${item.image}" width="600" height="600" loading="lazy" alt="${item.title}" class="img-cover">
-        <div class="card-content">
-          <h3 class="h3 card-title">${item.title}</h3>
-          <p class="card-text">${item.text}</p>
+      <div class="portfolio-card img-holder" style="--width: 800; --height: 600; border-radius: 24px;">
+        <img src="${item.image}" width="800" height="600" loading="lazy" alt="${item.title}" class="img-cover">
+        
+        <div class="portfolio-card__badge-overlay">
+          <div class="portfolio-card__badge-icon" style="background: ${badge.grad};">${badge.icon}</div>
+          <div class="portfolio-card__badge-text">
+            <span class="portfolio-card__badge-title">${badge.title}</span>
+            <span class="portfolio-card__badge-sub">${badge.sub}</span>
+          </div>
         </div>
+
         <a href="${item.link}" class="layer-link"></a>
       </div>
     `;
@@ -72,7 +90,7 @@ const renderList = (selector, items, type) => {
   container.innerHTML = '';
   items.forEach(entry => {
     const li = document.createElement('li');
-    li.style = 'margin-bottom: 25px; padding: 20px; background: rgba(255,255,255,0.02); border-radius: 8px;';
+    li.className = 'timeline-card reveal';
     if (type === 'education') {
       li.innerHTML = `<div class="progress-wrapper"><p class="progress-label" style="font-size: 1.2rem; font-weight: 700;">${entry.school}</p></div><p class="card-text" style="margin-top:10px;"><strong>${entry.major}</strong></p><p class="card-text" style="color:var(--roman-silver);">${entry.date} • ${entry.notes || ''}</p>`;
     } else if (type === 'experience' || type === 'organizations') {
@@ -90,6 +108,7 @@ const renderBlog = (items) => {
   container.innerHTML = '';
   items.forEach(entry => {
     const li = document.createElement('li');
+    li.className = 'reveal';
     li.innerHTML = `
       <div class="blog-card">
         <figure class="card-banner img-holder" style="--width:700; --height:470;">
@@ -247,10 +266,32 @@ const initSlider = function (currentSlider) {
 
 }
 
-// Initialize sliders after rendering dynamic content
+// Initialize sliders and animations after rendering dynamic content
 window.addEventListener('DOMContentLoaded', async () => {
   await loadAndRender();
   // re-query sliders after content rendered
   const slidersAfter = document.querySelectorAll('[data-slider]');
   for (let i = 0, len = slidersAfter.length; i < len; i++) { initSlider(slidersAfter[i]); }
+  
+  // Scroll reveal functionality
+  let revealElements = [];
+  const updateRevealElements = () => {
+    revealElements = document.querySelectorAll(".reveal");
+  };
+  
+  const revealOnScroll = () => {
+    for (let i = 0, len = revealElements.length; i < len; i++) {
+      const element = revealElements[i];
+      // trigger reveal slightly before element enters 50px from the bottom
+      const isElementVisible = element.getBoundingClientRect().top < window.innerHeight - 50;
+      if (isElementVisible) {
+        element.classList.add("active");
+      }
+    }
+  }
+  
+  updateRevealElements();
+  window.addEventListener("scroll", revealOnScroll);
+  // Run once after render is complete
+  setTimeout(revealOnScroll, 150);
 });
