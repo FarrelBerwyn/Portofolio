@@ -162,12 +162,25 @@
       border-color: hsla(0, 0%, 100%, 0.12);
     }
 
-    .feature-card:hover::after { opacity: 1; }
+    .feature-card:hover::after {
+      opacity: 1;
+    }
 
-    .feature-card:nth-child(1)::after { background: hsl(210, 60%, 55%); }
-    .feature-card:nth-child(2)::after { background: hsl(160, 60%, 45%); }
-    .feature-card:nth-child(3)::after { background: hsl(45, 80%, 55%); }
-    .feature-card:nth-child(4)::after { background: hsl(280, 60%, 55%); }
+    .feature-card:nth-child(1)::after {
+      background: hsl(210, 60%, 55%);
+    }
+
+    .feature-card:nth-child(2)::after {
+      background: hsl(160, 60%, 45%);
+    }
+
+    .feature-card:nth-child(3)::after {
+      background: hsl(45, 80%, 55%);
+    }
+
+    .feature-card:nth-child(4)::after {
+      background: hsl(280, 60%, 55%);
+    }
 
     .feature-card__head {
       display: flex;
@@ -188,10 +201,25 @@
       flex-shrink: 0;
     }
 
-    .feature-card:nth-child(1) .feature-card__num { background: hsla(210, 60%, 55%, 0.15); color: hsl(210, 60%, 65%); }
-    .feature-card:nth-child(2) .feature-card__num { background: hsla(160, 60%, 45%, 0.15); color: hsl(160, 60%, 55%); }
-    .feature-card:nth-child(3) .feature-card__num { background: hsla(45, 80%, 55%, 0.15); color: hsl(45, 80%, 65%); }
-    .feature-card:nth-child(4) .feature-card__num { background: hsla(280, 60%, 55%, 0.15); color: hsl(280, 60%, 65%); }
+    .feature-card:nth-child(1) .feature-card__num {
+      background: hsla(210, 60%, 55%, 0.15);
+      color: hsl(210, 60%, 65%);
+    }
+
+    .feature-card:nth-child(2) .feature-card__num {
+      background: hsla(160, 60%, 45%, 0.15);
+      color: hsl(160, 60%, 55%);
+    }
+
+    .feature-card:nth-child(3) .feature-card__num {
+      background: hsla(45, 80%, 55%, 0.15);
+      color: hsl(45, 80%, 65%);
+    }
+
+    .feature-card:nth-child(4) .feature-card__num {
+      background: hsla(280, 60%, 55%, 0.15);
+      color: hsl(280, 60%, 65%);
+    }
 
     .feature-card__title {
       color: var(--white);
@@ -237,7 +265,9 @@
       margin-bottom: 28px;
     }
 
-    .back-link:hover { color: var(--white); }
+    .back-link:hover {
+      color: var(--white);
+    }
 
     .back-link ion-icon {
       font-size: 1.6rem;
@@ -245,8 +275,13 @@
     }
 
     @media (max-width: 768px) {
-      .feature-grid { grid-template-columns: 1fr; }
-      .project-hero { gap: 28px; }
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-hero {
+        gap: 28px;
+      }
     }
   </style>
 </head>
@@ -295,15 +330,19 @@
           <!-- Text content -->
           <div class="project-hero__text-col">
             <p class="section-text">
-              Project ini bernama <strong>"I CAN!"</strong> — sebuah aplikasi yang dikembangkan untuk kompetisi bergengsi dari Apple, yaitu
-              <strong>Swift Student Challenge 2025 (SSC25)</strong>, dan berhasil terpilih sebagai <strong>pemenang (Winner)</strong> dalam kompetisi global tersebut.
+              Project ini bernama <strong>"I CAN!"</strong> — sebuah aplikasi yang dikembangkan untuk kompetisi
+              bergengsi dari Apple, yaitu
+              <strong>Swift Student Challenge 2025 (SSC25)</strong>, dan berhasil terpilih sebagai <strong>pemenang
+                (Winner)</strong> dalam kompetisi global tersebut.
             </p>
 
             <div class="section-divider"></div>
 
             <h3 class="h3" style="font-size: var(--fs-5); margin-bottom: 6px;">Konsep & Cerita</h3>
             <p class="section-text">
-              Aplikasi berbasis cerita (<em>story-driven</em>) yang interaktif, berpusat pada karakter bernama <strong>Berwyn</strong> — seorang pemuda yang merasa tidak aman dan mengalami kesulitan dalam interaksi sosial.
+              Aplikasi berbasis cerita (<em>story-driven</em>) yang interaktif, berpusat pada karakter bernama
+              <strong>Berwyn</strong> — seorang pemuda yang merasa tidak aman dan mengalami kesulitan dalam interaksi
+              sosial.
               Pengguna diajak membantu Berwyn mengatasi kecemasan sosialnya dan membangun rasa percaya diri.
             </p>
 
@@ -320,7 +359,8 @@
         <!-- ═══ FEATURE CARDS 2×2 ═══ -->
         <h3 class="h3" style="margin-bottom: 8px;">Fitur & Gameplay</h3>
         <p class="section-text" style="margin-bottom: 28px; max-width: 720px;">
-          Di dalam aplikasi terdapat indikator <strong>"Confident Level"</strong> yang bergerak dari <em>Low</em> ke <em>High</em>
+          Di dalam aplikasi terdapat indikator <strong>"Confident Level"</strong> yang bergerak dari <em>Low</em> ke
+          <em>High</em>
           seiring keberhasilan pengguna menyelesaikan tantangan.
         </p>
 
@@ -333,7 +373,8 @@
               <h4 class="feature-card__title">Personalized Learning & Planning</h4>
             </div>
             <p class="feature-card__desc">
-              Tantangan yang disesuaikan dengan aktivitas sehari-hari untuk melatih fokus dan keputusan, seperti simulasi memesan kopi berdasarkan preferensi karakter.
+              Tantangan yang disesuaikan dengan aktivitas sehari-hari untuk melatih fokus dan keputusan, seperti
+              simulasi memesan kopi berdasarkan preferensi karakter.
             </p>
           </div>
 
@@ -344,7 +385,8 @@
               <h4 class="feature-card__title">Latihan Berbicara (Speaking Practice)</h4>
             </div>
             <p class="feature-card__desc">
-              Fitur interaktif yang memanfaatkan mikrofon perangkat. Pengguna diminta membaca dan mengeja frasa tertentu untuk melatih kelancaran dan keberanian berbicara.
+              Fitur interaktif yang memanfaatkan mikrofon perangkat. Pengguna diminta membaca dan mengeja frasa tertentu
+              untuk melatih kelancaran dan keberanian berbicara.
             </p>
           </div>
 
@@ -355,7 +397,8 @@
               <h4 class="feature-card__title">Visualisasi Positif & Afirmasi</h4>
             </div>
             <p class="feature-card__desc">
-              Melatih Berwyn untuk membayangkan kesuksesan dan membuang pikiran buruk melalui pesan afirmasi positif seperti <em>"You are amazing!"</em> dan <em>"Good job!"</em>.
+              Melatih Berwyn untuk membayangkan kesuksesan dan membuang pikiran buruk melalui pesan afirmasi positif
+              seperti <em>"You are amazing!"</em> dan <em>"Good job!"</em>.
             </p>
           </div>
 
@@ -366,7 +409,8 @@
               <h4 class="feature-card__title">Simulasi Jejaring / Komunitas</h4>
             </div>
             <p class="feature-card__desc">
-              Simulasi skenario sosial di mana Berwyn berlatih memperkenalkan diri dan bergabung ke dalam komunitas programmer AI untuk meningkatkan kemampuan bersosialisasi.
+              Simulasi skenario sosial di mana Berwyn berlatih memperkenalkan diri dan bergabung ke dalam komunitas
+              programmer AI untuk meningkatkan kemampuan bersosialisasi.
             </p>
           </div>
 
@@ -379,7 +423,8 @@
             <h3 class="h3" style="font-size: var(--fs-5); margin-bottom: 10px;">Detail Teknis</h3>
             <ul class="info-list">
               <li><strong>Musik Latar:</strong> <em>Strange Fruits</em> oleh Amnesiac H.</li>
-              <li><strong>Teknologi:</strong> Dibangun menggunakan ekosistem Apple (Swift/SwiftUI), dioptimalkan untuk iPad/iOS.</li>
+              <li><strong>Teknologi:</strong> Dibangun menggunakan ekosistem Apple (Swift/SwiftUI), dioptimalkan untuk
+                iPad/iOS.</li>
             </ul>
           </div>
 

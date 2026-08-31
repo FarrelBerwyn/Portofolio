@@ -156,12 +156,25 @@
       border-color: hsla(0, 0%, 100%, 0.12);
     }
 
-    .feature-card:hover::after { opacity: 1; }
+    .feature-card:hover::after {
+      opacity: 1;
+    }
 
-    .feature-card:nth-child(1)::after { background: hsl(200, 80%, 50%); }
-    .feature-card:nth-child(2)::after { background: hsl(170, 70%, 45%); }
-    .feature-card:nth-child(3)::after { background: hsl(35, 85%, 55%); }
-    .feature-card:nth-child(4)::after { background: hsl(260, 60%, 55%); }
+    .feature-card:nth-child(1)::after {
+      background: hsl(200, 80%, 50%);
+    }
+
+    .feature-card:nth-child(2)::after {
+      background: hsl(170, 70%, 45%);
+    }
+
+    .feature-card:nth-child(3)::after {
+      background: hsl(35, 85%, 55%);
+    }
+
+    .feature-card:nth-child(4)::after {
+      background: hsl(260, 60%, 55%);
+    }
 
     .feature-card__head {
       display: flex;
@@ -182,10 +195,25 @@
       flex-shrink: 0;
     }
 
-    .feature-card:nth-child(1) .feature-card__num { background: hsla(200, 80%, 50%, 0.15); color: hsl(200, 80%, 60%); }
-    .feature-card:nth-child(2) .feature-card__num { background: hsla(170, 70%, 45%, 0.15); color: hsl(170, 70%, 55%); }
-    .feature-card:nth-child(3) .feature-card__num { background: hsla(35, 85%, 55%, 0.15); color: hsl(35, 85%, 65%); }
-    .feature-card:nth-child(4) .feature-card__num { background: hsla(260, 60%, 55%, 0.15); color: hsl(260, 60%, 65%); }
+    .feature-card:nth-child(1) .feature-card__num {
+      background: hsla(200, 80%, 50%, 0.15);
+      color: hsl(200, 80%, 60%);
+    }
+
+    .feature-card:nth-child(2) .feature-card__num {
+      background: hsla(170, 70%, 45%, 0.15);
+      color: hsl(170, 70%, 55%);
+    }
+
+    .feature-card:nth-child(3) .feature-card__num {
+      background: hsla(35, 85%, 55%, 0.15);
+      color: hsl(35, 85%, 65%);
+    }
+
+    .feature-card:nth-child(4) .feature-card__num {
+      background: hsla(260, 60%, 55%, 0.15);
+      color: hsl(260, 60%, 65%);
+    }
 
     .feature-card__title {
       color: var(--white);
@@ -229,7 +257,9 @@
       margin-bottom: 28px;
     }
 
-    .back-link:hover { color: var(--white); }
+    .back-link:hover {
+      color: var(--white);
+    }
 
     .back-link ion-icon {
       font-size: 1.6rem;
@@ -237,8 +267,13 @@
     }
 
     @media (max-width: 768px) {
-      .feature-grid { grid-template-columns: 1fr; }
-      .project-hero { gap: 28px; }
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-hero {
+        gap: 28px;
+      }
     }
   </style>
 </head>
@@ -287,8 +322,10 @@
           <!-- Text content -->
           <div class="project-hero__text-col">
             <p class="section-text">
-              <strong>PELNI Digital</strong> is a mobile application designed to improve the accessibility and efficiency of
-              <strong>maritime transportation services</strong> in Indonesia. As an archipelagic nation, Indonesia relies heavily on
+              <strong>PELNI Digital</strong> is a mobile application designed to improve the accessibility and
+              efficiency of
+              <strong>maritime transportation services</strong> in Indonesia. As an archipelagic nation, Indonesia
+              relies heavily on
               inter-island connectivity to support public mobility and economic growth.
             </p>
 
@@ -296,15 +333,18 @@
 
             <h3 class="h3" style="font-size: var(--fs-5); margin-bottom: 6px;">The Challenge</h3>
             <p class="section-text">
-              Limited access to maritime transportation services — particularly in terms of <strong>ticket bookings</strong> and
-              <strong>travel information</strong> — remains a critical challenge for many Indonesians living across the archipelago.
+              Limited access to maritime transportation services — particularly in terms of <strong>ticket
+                bookings</strong> and
+              <strong>travel information</strong> — remains a critical challenge for many Indonesians living across the
+              archipelago.
             </p>
 
             <div class="section-divider"></div>
 
             <h3 class="h3" style="font-size: var(--fs-5); margin-bottom: 6px;">Developer</h3>
             <p class="section-text">
-              Built by <strong>Farrel Berwyn</strong>, combining full-stack development with AI integrations to create a scalable maritime services platform.
+              Built by <strong>Farrel Berwyn</strong>, combining full-stack development with AI integrations to create a
+              scalable maritime services platform.
             </p>
           </div>
 
@@ -325,7 +365,8 @@
               <h4 class="feature-card__title">Smart Ticketing System</h4>
             </div>
             <p class="feature-card__desc">
-              Streamlined ticket booking experience with real-time availability, seat selection, and digital payment integration for seamless maritime travel.
+              Streamlined ticket booking experience with real-time availability, seat selection, and digital payment
+              integration for seamless maritime travel.
             </p>
           </div>
 
@@ -336,7 +377,8 @@
               <h4 class="feature-card__title">Backend APIs & Data Pipelines</h4>
             </div>
             <p class="feature-card__desc">
-              Robust backend architecture with real-time data pipelines handling schedule updates, booking transactions, and fleet management across Indonesia's maritime routes.
+              Robust backend architecture with real-time data pipelines handling schedule updates, booking transactions,
+              and fleet management across Indonesia's maritime routes.
             </p>
           </div>
 
@@ -347,7 +389,8 @@
               <h4 class="feature-card__title">AI-Powered Predictive Maintenance</h4>
             </div>
             <p class="feature-card__desc">
-              Machine learning integrations for predictive maintenance and route optimization, ensuring fleet reliability and operational efficiency.
+              Machine learning integrations for predictive maintenance and route optimization, ensuring fleet
+              reliability and operational efficiency.
             </p>
           </div>
 
@@ -358,7 +401,8 @@
               <h4 class="feature-card__title">Scalable Cloud Deployment</h4>
             </div>
             <p class="feature-card__desc">
-              Container orchestration with Docker and Kubernetes for high-availability deployment, handling traffic spikes during peak travel seasons.
+              Container orchestration with Docker and Kubernetes for high-availability deployment, handling traffic
+              spikes during peak travel seasons.
             </p>
           </div>
 
