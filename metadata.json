@@ -1,0 +1,8 @@
+{
+  "name": "Farrel Berwyn Portfolio",
+  "description": "Personal portfolio website of Farrel Chandra Berwyn showcasing AI/ML projects, full-stack development, and software engineering experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

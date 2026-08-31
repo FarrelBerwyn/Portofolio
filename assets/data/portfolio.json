@@ -1,38 +1,51 @@
 [
   {
     "image": "./assets/images/portfolio-1.jpg",
-    "title": "SIAGA — AI Emergency Navigation System",
-    "text": "AI & Reinforcement Learning — reinforcement learning agent, IoT traffic simulation, real-time routing",
-    "link": "./siaga.html"
+    "title": "SIAGA",
+    "text": "AI & Reinforcement Learning",
+    "link": "./siaga.html",
+    "badgeTitle": "SIAGA",
+    "badgeSub": "OPSI 2026"
   },
   {
     "image": "./assets/images/portfolio-2.jpg",
-    "title": "I CAN! — Confidence Building Game",
-    "text": "Game-based app for confidence building (Swift, SwiftUI)",
-    "link": "./ican-ssc.html"
+    "title": "I CAN!",
+    "text": "Confidence Building Game",
+    "link": "./ican-ssc.html",
+    "badgeTitle": "SSC25 Winner",
+    "badgeSub": "Swift Student Challenge"
   },
   {
     "image": "./assets/images/portfolio-3.jpg",
-    "title": "PELNI Digital — Smart Maritime Ticketing & Services App",
-    "text": "Mobile app improving maritime ticketing and services; backend APIs, AI integrations",
-    "link": "./pelni-digital.html"
+    "title": "PELNI Digital",
+    "text": "Smart Maritime App",
+    "link": "./pelni-digital.html",
+    "badgeTitle": "Smart Ticketing",
+    "badgeSub": "Maritime Services"
   },
   {
     "image": "./assets/images/portfolio-4.jpg",
-    "title": "Jasamall — One-Stop AI Services",
-    "text": "AI chatbot ecosystem and service aggregator (detection, diffusion, model optimization)",
-    "link": "./jasamall.html"
+    "title": "Jasamall",
+    "text": "One-Stop AI Services",
+    "link": "./jasamall.html",
+    "badgeTitle": "10+ AI Agents",
+    "badgeSub": "Intelligent Ecosystem"
   },
   {
     "image": "./assets/images/portfolio-5.jpg",
     "title": "Mobile-First Web Applications",
-    "text": "Responsive web & mobile-first apps (React, Node.js, Flutter)",
-    "link": "./mobile-apps.html"
+    "text": "React / Node.js / Flutter",
+    "link": "./mobile-apps.html",
+    "badgeTitle": "Mobile-First UI",
+    "badgeSub": "Fully Responsive Layouts"
   },
   {
     "image": "./assets/images/portfolio-6.jpg",
     "title": "Data-Driven Analytics Dashboard",
-    "text": "End-to-end analytics: ETL, dashboards, predictive models (Python, SQL)",
-    "link": "./analytics-dashboard.html"
+    "text": "Python / SQL / Data Visualization",
+    "link": "./analytics-dashboard.html",
+    "badgeTitle": "Interactive BI",
+    "badgeSub": "Data Visualization"
   }
 ]
+

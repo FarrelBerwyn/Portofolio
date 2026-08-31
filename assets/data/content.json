@@ -15,19 +15,36 @@
   ],
   "experience": [
     {
-      "role": "Techniqto - Founder & Chief of Community",
-      "date": "2025 • Present",
-      "notes": "Built learning community focused on programming, robotics, and innovation with 80+ members"
+      "role": "Adobe Express Ambassador",
+      "company": "Adobe · Kontrak",
+      "date": "Agu 2026 - Saat ini · 1 bln",
+      "location": "Indonesia · Jarak jauh",
+      "notes": "Collaborate with Adobe’s creative ecosystem to deliver scalable design solutions for global creators. Conceptualize and create high-quality, engaging visual templates optimized for diverse digital media needs.",
+      "skills": "Design, Art, Content Creation, Visual Templates"
     },
     {
-      "role": "PT. Teknologi Kecerdasan Sinergi - Founder & CMO",
-      "date": "2024 • Present",
-      "notes": "Deployed and adopted AI & data analytics solutions; Collaborated with technical teams translating AI concepts into real-world applications"
+      "role": "Edutech Specialist",
+      "company": "Global Solutindo (Apple Relation) · Paruh Waktu",
+      "date": "Jun 2026 - Saat ini · 3 bln",
+      "location": "Indonesia · Gabungan",
+      "notes": "Manage and support the Apple's Swift Coding Club: Focusing on ecosystem adoption for Swift and iOS; Managing class operations, coordinating participants, and ensuring seamless technical execution during training sessions; Drive community engagement and provide technical support to foster a collaborative learning environment for iOS technology.",
+      "skills": "Information Technology, Community, Swift, iOS Ecosystem"
     },
     {
-      "role": "Swift Student Cafe, iHub Binus University - Tech Mentor",
-      "date": "2026",
-      "notes": "Facilitate interactive learning sessions and provide technical assistance to developers"
+      "role": "Mentor in Artificial Intelligence",
+      "company": "Yayasan Sagasitas Indonesia",
+      "date": "Jun 2026 - Saat ini · 3 bln",
+      "location": "Di lokasi",
+      "notes": "Initialized by the Government of Jakarta serving as a Trainer at Yayasan Sagasitas Indonesia, focusing on Artificial Intelligence education for schools across Indonesia. Delivered training to 45+ schools in 7 provinces, empowering students and educators to build real AI projects. Designing curriculum, mentoring students in hands-on projects, and collaborating with partners such as AWS and Dinas Pendidikan DKI Jakarta to expand access to digital literacy programs.",
+      "skills": "Artificial Intelligence (AI), Mentoring, Curriculum Design, AWS"
+    },
+    {
+      "role": "Project Manager Swift@america",
+      "company": "atamerica · Paruh Waktu",
+      "date": "Jun 2026 - Saat ini · 3 bln",
+      "location": "Indonesia · Di lokasi",
+      "notes": "Directing program planning, operational execution, and community coordination for Apple Swift developer programs at @america.",
+      "skills": "Creative Ideation, Operations Management, Swift Education"
     }
   ],
   "certifications": [

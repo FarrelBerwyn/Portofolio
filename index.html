@@ -6,40 +6,151 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Farrel Berwyn — Portfolio</title>
+  <link rel="preconnect" href="https://d8j0ntlcm91z4.cloudfront.net" crossorigin>
   <link rel="stylesheet" href="./assets/css/style.css?v=20260615_v4">
 </head>
 <body>
+
+  <!-- 
+    - #BACKGROUND CINEMATIC VIDEO & SCRIM
+  -->
+  <div class="bg-video-container" aria-hidden="true">
+    <video
+      id="bg-video"
+      autoplay
+      muted
+      playsinline
+      preload="auto"
+      poster="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260806_132328_5f9029c8-218f-4489-82b6-29ff2849920e.png"
+    >
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260806_133255_956f653f-5d80-4b06-abd5-0f46c98b60fa.mp4" type="video/mp4">
+    </video>
+    <div class="bg-video-scrim"></div>
+  </div>
+
+  <!-- 
+    - #HEADER (Berwynolio Topbar)
+  -->
+
+  <header class="header" data-header id="site-header">
+    <div class="container">
+
+      <a href="#hero" class="logo-berwyn" aria-label="Berwynolio Home">Berwynolio</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#hero" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="#experience" class="navbar-link" data-nav-link>Experience</a>
+          </li>
+
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-dropdown" data-dropdown>
+            <button class="navbar-link dropdown-toggle" data-dropdown-btn aria-expanded="false" aria-haspopup="true">
+              <span>More</span>
+              <ion-icon name="chevron-down-outline" class="dropdown-icon" aria-hidden="true"></ion-icon>
+            </button>
+
+            <ul class="dropdown-menu" data-dropdown-menu>
+              <li>
+                <a href="#education" class="dropdown-link" data-nav-link>Education</a>
+              </li>
+              <li>
+                <a href="#certifications" class="dropdown-link" data-nav-link>Awards</a>
+              </li>
+              <li>
+                <a href="#organizations" class="dropdown-link" data-nav-link>Leadership</a>
+              </li>
+              <li>
+                <a href="#blog" class="dropdown-link" data-nav-link>News</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
 
       <!-- 
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home">
-        <div class="container">
+      <section class="section hero" id="hero" aria-label="home">
+        <div class="container hero-container">
+
+          <div class="hero-banner">
+            <img src="./assets/images/berwyn-banner.jpg" width="600" height="600" alt="Farrel Berwyn" class="h-100 w-100">
+            <!-- <img src="./assets/images/berwyn-banner.jpg" width="300" height="300" alt="Farrel Berwyn" style="width:100px;height:400px;object-fit:cover;max-width:100%;">
+            <img src="./assets/images/berwyn-banner.jpg" alt="Farrel Berwyn" class="hero-banner__img"> -->
+          </div>
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title">Farrel Berwyn</h1>
+            <!-- Interactive multi-span character display "FARREL BERWYN" -->
+            <h1 class="h1 hero-title" aria-label="FARREL BERWYN">
+              <span class="drift-word" aria-hidden="true">
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">F</span><span data-drift class="drift-char-wrap"><span class="drift-char">F</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">A</span><span data-drift class="drift-char-wrap"><span class="drift-char">A</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">R</span><span data-drift class="drift-char-wrap"><span class="drift-char">R</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">R</span><span data-drift class="drift-char-wrap"><span class="drift-char">R</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">E</span><span data-drift class="drift-char-wrap"><span class="drift-char">E</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">L</span><span data-drift class="drift-char-wrap"><span class="drift-char">L</span></span></span>
+              </span>
+              <span class="drift-word" aria-hidden="true">
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">B</span><span data-drift class="drift-char-wrap"><span class="drift-char">B</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">E</span><span data-drift class="drift-char-wrap"><span class="drift-char">E</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">R</span><span data-drift class="drift-char-wrap"><span class="drift-char">R</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">W</span><span data-drift class="drift-char-wrap"><span class="drift-char">W</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">Y</span><span data-drift class="drift-char-wrap"><span class="drift-char">Y</span></span></span>
+                <span class="drift-letter"><span aria-hidden="true" class="ghost-char">N</span><span data-drift class="drift-char-wrap"><span class="drift-char">N</span></span></span>
+              </span>
+            </h1>
 
             <p class="hero-subtitle">
-              Youth Startup Founder | Full-Stack Developer
+              YOUTH STARTUP FOUNDER | FULL-STACK DEVELOPER
             </p>
 
-            <div class="hero-banner">
-              <img src="./assets/images/berwyn-banner.jpg" width="600" height="600" alt="Farrel Berwyn" class="h-100 w-100">
-              <!-- <img src="./assets/images/berwyn-banner.jpg" width="300" height="300" alt="Farrel Berwyn" style="width:100px;height:400px;object-fit:cover;max-width:100%;">
-              <img src="./assets/images/berwyn-banner.jpg" alt="Farrel Berwyn" class="hero-banner__img"> -->
+            <p class="section-text hero-desc">
+              <span class="highlight">Hi, I'm Farrel Chandra Berwyn,</span> an Apple Swift Student Challenge Winner passionate about integrating artificial intelligence, robotics, and intelligent systems to develop scalable real-world technologies. Specializing in AI/ML, full-stack development, and computer vision solutions.
+            </p>
+
+            <div class="hero-btn-wrap">
+              <a href="./assets/files/FarrelChandraBerwyn_CV.pdf" class="btn-cv" download>
+                <span>Download CV</span>
+                <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+              </a>
             </div>
-
-            <p class="section-text">
-              Hi, I'm Farrel Chandra Berwyn, an Apple Swift Student Challenge Winner passionate about integrating artificial intelligence, robotics, and intelligent systems to develop scalable real-world technologies. Specializing in AI/ML, full-stack development, and computer vision solutions.
-            </p>
-
-            <a href="./assets/files/FarrelChandraBerwyn_CV.pdf" class="btn has-before" download>
-              <span class="span">Download CV</span>
-
-              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
-            </a>
 
           </div>
 
@@ -54,16 +165,16 @@
         - #SKILLS
       -->
 
-      <section class="section skills" aria-label="our skills">
+      <section class="section skills" id="skills" aria-label="our skills">
         <div class="container">
 
-          <p class="section-subtitle">Building Smart Solutions</p>
+          <p class="section-subtitle reveal">Building Smart Solutions</p>
 
-          <h2 class="h2 section-title">AI, Full-Stack Development & Innovation.</h2>
+          <h2 class="h2 section-title reveal">AI, Full-Stack Development & Innovation.</h2>
 
           <div class="skills-wrapper reveal">
 
-            <div>
+            <div class="skills-bio-card glass-card reveal">
               <p class="section-text">
                 I specialize in artificial intelligence and machine learning, with expertise in computer vision, neural networks, and deep learning architectures. My experience spans full-stack development using modern frameworks and tools for building scalable applications.
               </p>
@@ -75,55 +186,55 @@
               <a href="mailto:farrel.berwyn18@gmail.com" class="btn has-before">farrel.berwyn18@gmail.com</a>
             </div>
 
-            <div>
+            <div class="skills-progress-card glass-card reveal">
 
-              <ul class="skills-list">
+              <ul class="skills-list" data-skills-list>
 
-                <li>
+                <li class="skill-item reveal">
                   <div class="progress-wrapper">
                     <p class="progress-label">AI & Machine Learning</p>
 
-                    <data class="progress-value" value="90">90%</data>
+                    <data class="progress-value" value="90" data-target="90">0%</data>
                   </div>
 
                   <div class="progress-bg">
-                    <div class="progress" style="width: 90%;"></div>
+                    <div class="progress" data-progress="90" style="width: 0%;"></div>
                   </div>
                 </li>
 
-                <li>
+                <li class="skill-item reveal">
                   <div class="progress-wrapper">
                     <p class="progress-label">Python & Swift Programming</p>
 
-                    <data class="progress-value" value="85">85%</data>
+                    <data class="progress-value" value="85" data-target="85">0%</data>
                   </div>
 
                   <div class="progress-bg">
-                    <div class="progress" style="width: 85%;"></div>
+                    <div class="progress" data-progress="85" style="width: 0%;"></div>
                   </div>
                 </li>
 
-                <li>
+                <li class="skill-item reveal">
                   <div class="progress-wrapper">
                     <p class="progress-label">Full-Stack Development</p>
 
-                    <data class="progress-value" value="80">80%</data>
+                    <data class="progress-value" value="80" data-target="80">0%</data>
                   </div>
 
                   <div class="progress-bg">
-                    <div class="progress" style="width: 80%;"></div>
+                    <div class="progress" data-progress="80" style="width: 0%;"></div>
                   </div>
                 </li>
 
-                <li>
+                <li class="skill-item reveal">
                   <div class="progress-wrapper">
                     <p class="progress-label">Computer Vision & Deep Learning</p>
 
-                    <data class="progress-value" value="88">88%</data>
+                    <data class="progress-value" value="88" data-target="88">0%</data>
                   </div>
 
                   <div class="progress-bg">
-                    <div class="progress" style="width: 88%;"></div>
+                    <div class="progress" data-progress="88" style="width: 0%;"></div>
                   </div>
                 </li>
 
@@ -144,7 +255,7 @@
         - #SERVICE
       -->
 
-      <section class="service" aria-labelledby="service-label">
+      <section class="service" id="service" aria-labelledby="service-label">
         <div class="container">
 
           <div class="title-wrapper reveal">
@@ -295,6 +406,28 @@
 
 
       <!-- 
+        - #WORK EXPERIENCE (Moved to top before Portfolio)
+      -->
+
+      <section class="section" id="experience" aria-labelledby="experience-label" style="background: rgba(255,255,255,0.01);">
+        <div class="container">
+          <div class="title-wrapper reveal">
+            <div>
+              <p class="section-subtitle" id="experience-label">Career Journey</p>
+              <h2 class="h2 section-title">Work Experience</h2>
+            </div>
+          </div>
+          <div class="skills-wrapper reveal" style="display: block;">
+            <ul class="skills-list" data-experience-list style="list-style: none;"></ul>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
         - #PORTFOLIO
       -->
 
@@ -314,166 +447,133 @@
 
         </div>
 
-        <div class="slider reveal" data-slider>
+        <div class="slider portfolio-3d-slider reveal" data-slider>
 
-          <ul class="slider-container" data-slider-container>
-
-            <li class="slider-item" data-slider-item>
-              <div class="portfolio-grid-card">
-                <div class="portfolio-grid-card__img-wrap">
-                  <img src="./assets/images/portfolio-1.jpg?v=20260424" alt="SIAGA" class="img-cover" loading="lazy">
-                  
-                  <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
-                    <div class="portfolio-grid-card__badge-icon">🚑</div>
-                    <div class="portfolio-grid-card__badge-text">
-                      <span class="portfolio-grid-card__badge-title">~25% Faster</span>
-                      <span class="portfolio-grid-card__badge-sub">Emergency Navigation</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="portfolio-grid-card__content">
-                  <h3 class="h3 portfolio-grid-card__title">SIAGA</h3>
-                  <p class="portfolio-grid-card__text">AI & Reinforcement Learning</p>
-                </div>
-
-                <a href="./siaga.html" class="layer-link"></a>
-              </div>
-            </li>
-
-            <li class="slider-item" data-slider-item>
-              <div class="portfolio-grid-card">
-                <div class="portfolio-grid-card__img-wrap">
-                  <img src="./assets/images/portfolio-2.jpg?v=20260424" alt="I CAN!" class="img-cover" loading="lazy">
-                  
-                  <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
-                    <div class="portfolio-grid-card__badge-icon">🏆</div>
-                    <div class="portfolio-grid-card__badge-text">
-                      <span class="portfolio-grid-card__badge-title">SSC25 Winner</span>
-                      <span class="portfolio-grid-card__badge-sub">Swift Student Challenge</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="portfolio-grid-card__content">
-                  <h3 class="h3 portfolio-grid-card__title">I CAN!</h3>
-                  <p class="portfolio-grid-card__text">Confidence Building Game</p>
-                </div>
-
-                <a href="./ican-ssc.html" class="layer-link"></a>
-              </div>
-            </li>
-
-            <li class="slider-item" data-slider-item>
-              <div class="portfolio-grid-card">
-                <div class="portfolio-grid-card__img-wrap">
-                  <img src="./assets/images/portfolio-3.jpg?v=20260424" alt="PELNI Digital" class="img-cover" loading="lazy">
-                  
-                  <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
-                    <div class="portfolio-grid-card__badge-icon">🚢</div>
-                    <div class="portfolio-grid-card__badge-text">
-                      <span class="portfolio-grid-card__badge-title">Smart Ticketing</span>
-                      <span class="portfolio-grid-card__badge-sub">Maritime Services</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="portfolio-grid-card__content">
-                  <h3 class="h3 portfolio-grid-card__title">PELNI Digital</h3>
-                  <p class="portfolio-grid-card__text">Smart Maritime App</p>
-                </div>
-
-                <a href="./pelni-digital.html" class="layer-link"></a>
-              </div>
-            </li>
-
-            <li class="slider-item" data-slider-item>
-              <div class="portfolio-grid-card">
-                <div class="portfolio-grid-card__img-wrap">
-                  <img src="./assets/images/portfolio-4.jpg?v=20260424" alt="Jasamall" class="img-cover" loading="lazy">
-                  
-                  <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
-                    <div class="portfolio-grid-card__badge-icon">🤖</div>
-                    <div class="portfolio-grid-card__badge-text">
-                      <span class="portfolio-grid-card__badge-title">10+ AI Agents</span>
-                      <span class="portfolio-grid-card__badge-sub">Intelligent Ecosystem</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="portfolio-grid-card__content">
-                  <h3 class="h3 portfolio-grid-card__title">Jasamall</h3>
-                  <p class="portfolio-grid-card__text">One-Stop AI Services</p>
-                </div>
-
-                <a href="./jasamall.html" class="layer-link"></a>
-              </div>
-            </li>
-
-            <li class="slider-item" data-slider-item>
-              <div class="portfolio-grid-card">
-                <div class="portfolio-grid-card__img-wrap">
-                  <img src="./assets/images/portfolio-5.jpg?v=20260424" alt="Mobile-First Web Applications" class="img-cover" loading="lazy">
-                  
-                  <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
-                    <div class="portfolio-grid-card__badge-icon">📱</div>
-                    <div class="portfolio-grid-card__badge-text">
-                      <span class="portfolio-grid-card__badge-title">Mobile-First UI</span>
-                      <span class="portfolio-grid-card__badge-sub">Fully Responsive Layouts</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="portfolio-grid-card__content">
-                  <h3 class="h3 portfolio-grid-card__title">Mobile-First Web Applications</h3>
-                  <p class="portfolio-grid-card__text">React / Node.js / Flutter</p>
-                </div>
-
-                <a href="./mobile-apps.html" class="layer-link"></a>
-              </div>
-            </li>
-
-            <li class="slider-item" data-slider-item>
-              <div class="portfolio-grid-card">
-                <div class="portfolio-grid-card__img-wrap">
-                  <img src="./assets/images/portfolio-6.jpg?v=20260424" alt="Data-Driven Analytics Dashboard" class="img-cover" loading="lazy">
-                  
-                  <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
-                    <div class="portfolio-grid-card__badge-icon">📊</div>
-                    <div class="portfolio-grid-card__badge-text">
-                      <span class="portfolio-grid-card__badge-title">Interactive BI</span>
-                      <span class="portfolio-grid-card__badge-sub">Data Visualization</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="portfolio-grid-card__content">
-                  <h3 class="h3 portfolio-grid-card__title">Data-Driven Analytics Dashboard</h3>
-                  <p class="portfolio-grid-card__text">Python / SQL / Data Visualization</p>
-                </div>
-
-                <a href="./analytics-dashboard.html" class="layer-link"></a>
-              </div>
-            </li>
-
-          </ul>
-
-          <div class="slider-controls">
-            <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
-              <div class="line"></div>
-              <div class="arrow"></div>
+          <div class="layered-slider-wrapper">
+            <button class="slider-nav-btn prev" data-slider-prev aria-label="Slide to previous item">
+              <ion-icon name="chevron-back-outline" aria-hidden="true"></ion-icon>
             </button>
 
-            <button class="slider-control next" data-slider-next aria-label="Slide to next item">
-              <div class="line"></div>
-              <div class="arrow"></div>
+            <ul class="slider-container layered-carousel" data-slider-container>
+
+              <li class="slider-item is-active" data-slider-item data-index="0">
+                <div class="portfolio-grid-card">
+                  <div class="portfolio-grid-card__img-wrap">
+                    <img src="./assets/images/portfolio-1.jpg?v=20260424" alt="SIAGA" class="img-cover" loading="lazy">
+                    
+                    <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
+                      <div class="portfolio-grid-card__badge-icon" style="background: linear-gradient(135deg, hsl(0, 75%, 55%), hsl(30, 90%, 55%));">🚑</div>
+                      <div class="portfolio-grid-card__badge-text">
+                        <span class="portfolio-grid-card__badge-title">SIAGA</span>
+                        <span class="portfolio-grid-card__badge-sub">OPSI 2026</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="./siaga.html" class="layer-link" aria-label="View SIAGA project"></a>
+                </div>
+              </li>
+
+              <li class="slider-item is-next" data-slider-item data-index="1">
+                <div class="portfolio-grid-card">
+                  <div class="portfolio-grid-card__img-wrap">
+                    <img src="./assets/images/portfolio-2.jpg?v=20260424" alt="I CAN!" class="img-cover" loading="lazy">
+                    
+                    <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
+                      <div class="portfolio-grid-card__badge-icon" style="background: linear-gradient(135deg, hsl(210, 80%, 55%), hsl(260, 70%, 60%));">🏆</div>
+                      <div class="portfolio-grid-card__badge-text">
+                        <span class="portfolio-grid-card__badge-title">SSC25 Winner</span>
+                        <span class="portfolio-grid-card__badge-sub">Swift Student Challenge</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="./ican-ssc.html" class="layer-link" aria-label="View I CAN! project"></a>
+                </div>
+              </li>
+
+              <li class="slider-item is-hidden-right" data-slider-item data-index="2">
+                <div class="portfolio-grid-card">
+                  <div class="portfolio-grid-card__img-wrap">
+                    <img src="./assets/images/portfolio-3.jpg?v=20260424" alt="PELNI Digital" class="img-cover" loading="lazy">
+                    
+                    <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
+                      <div class="portfolio-grid-card__badge-icon" style="background: linear-gradient(135deg, hsl(200, 80%, 50%), hsl(170, 70%, 45%));">🚢</div>
+                      <div class="portfolio-grid-card__badge-text">
+                        <span class="portfolio-grid-card__badge-title">Smart Ticketing</span>
+                        <span class="portfolio-grid-card__badge-sub">Maritime Services</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="./pelni-digital.html" class="layer-link" aria-label="View PELNI Digital project"></a>
+                </div>
+              </li>
+
+              <li class="slider-item is-hidden-right" data-slider-item data-index="3">
+                <div class="portfolio-grid-card">
+                  <div class="portfolio-grid-card__img-wrap">
+                    <img src="./assets/images/portfolio-4.jpg?v=20260424" alt="Jasamall" class="img-cover" loading="lazy">
+                    
+                    <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
+                      <div class="portfolio-grid-card__badge-icon" style="background: linear-gradient(135deg, hsl(150, 80%, 50%), hsl(190, 70%, 45%));">🤖</div>
+                      <div class="portfolio-grid-card__badge-text">
+                        <span class="portfolio-grid-card__badge-title">10+ AI Agents</span>
+                        <span class="portfolio-grid-card__badge-sub">Intelligent Ecosystem</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="./jasamall.html" class="layer-link" aria-label="View Jasamall project"></a>
+                </div>
+              </li>
+
+              <li class="slider-item is-hidden-left" data-slider-item data-index="4">
+                <div class="portfolio-grid-card">
+                  <div class="portfolio-grid-card__img-wrap">
+                    <img src="./assets/images/portfolio-5.jpg?v=20260424" alt="Mobile-First Web Applications" class="img-cover" loading="lazy">
+                    
+                    <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
+                      <div class="portfolio-grid-card__badge-icon" style="background: linear-gradient(135deg, hsl(280, 80%, 55%), hsl(320, 70%, 50%));">📱</div>
+                      <div class="portfolio-grid-card__badge-text">
+                        <span class="portfolio-grid-card__badge-title">Mobile-First UI</span>
+                        <span class="portfolio-grid-card__badge-sub">Fully Responsive Layouts</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="./mobile-apps.html" class="layer-link" aria-label="View Mobile Applications project"></a>
+                </div>
+              </li>
+
+              <li class="slider-item is-prev" data-slider-item data-index="5">
+                <div class="portfolio-grid-card">
+                  <div class="portfolio-grid-card__img-wrap">
+                    <img src="./assets/images/portfolio-6.jpg?v=20260424" alt="Data-Driven Analytics Dashboard" class="img-cover" loading="lazy">
+                    
+                    <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
+                      <div class="portfolio-grid-card__badge-icon" style="background: linear-gradient(135deg, hsl(30, 85%, 50%), hsl(10, 70%, 45%));">📊</div>
+                      <div class="portfolio-grid-card__badge-text">
+                        <span class="portfolio-grid-card__badge-title">Interactive BI</span>
+                        <span class="portfolio-grid-card__badge-sub">Data Visualization</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="./analytics-dashboard.html" class="layer-link" aria-label="View Analytics Dashboard project"></a>
+                </div>
+              </li>
+
+            </ul>
+
+            <button class="slider-nav-btn next" data-slider-next aria-label="Slide to next item">
+              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </button>
           </div>
 
         </div>
 
       </section>
-
 
 
 
@@ -483,7 +583,7 @@
         - #EDUCATION
       -->
 
-      <section class="section" aria-labelledby="education-label">
+      <section class="section" id="education" aria-labelledby="education-label">
         <div class="container">
           <div class="title-wrapper reveal">
             <div>
@@ -491,7 +591,7 @@
               <h2 class="h2 section-title">Education History</h2>
             </div>
           </div>
-          <div class="skills-wrapper" style="display: block;">
+          <div class="skills-wrapper reveal" style="display: block;">
             <ul class="skills-list" data-education-list style="list-style: none;"></ul>
           </div>
         </div>
@@ -499,31 +599,13 @@
 
 
 
-      <!-- 
-        - #WORK EXPERIENCE
-      -->
-
-      <section class="section" aria-labelledby="experience-label" style="background: rgba(255,255,255,0.01);">
-        <div class="container">
-          <div class="title-wrapper reveal">
-            <div>
-              <p class="section-subtitle" id="experience-label">Career Journey</p>
-              <h2 class="h2 section-title">Work Experience</h2>
-            </div>
-          </div>
-          <div class="skills-wrapper reveal" style="display: block;">
-            <ul class="skills-list" data-experience-list style="list-style: none;"></ul>
-          </div>
-        </div>
-      </section>
-
 
 
       <!-- 
         - #CERTIFICATIONS
       -->
 
-      <section class="section" aria-labelledby="cert-label">
+      <section class="section" id="certifications" aria-labelledby="cert-label">
         <div class="container">
           <div class="title-wrapper reveal">
             <div>
@@ -539,11 +621,13 @@
 
 
 
+
+
       <!-- 
         - #ORGANIZATIONS
       -->
 
-      <section class="section" aria-labelledby="org-label" style="background: rgba(255,255,255,0.01);">
+      <section class="section" id="organizations" aria-labelledby="org-label" style="background: rgba(255,255,255,0.01);">
         <div class="container">
           <div class="title-wrapper reveal">
             <div>
@@ -558,16 +642,19 @@
       </section>
 
 
+
+
+
       <!-- 
         - #BLOG
       -->
 
-      <section class="section blog reveal" aria-labelledby="blog-label">
+      <section class="section blog" id="blog" aria-labelledby="blog-label">
         <div class="container">
 
-          <p class="section-subtitle" id="blog-label">Recent Articles</p>
+          <p class="section-subtitle reveal" id="blog-label">Recent Articles</p>
 
-          <h2 class="h2 section-title">Latest News</h2>
+          <h2 class="h2 section-title reveal">Latest News</h2>
 
           <ul class="blog-list" data-blog-list>
             <!-- Blog entries will be rendered here from assets/data/content.json -->
@@ -587,10 +674,10 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
 
-      <ul class="footer-list">
+      <ul class="footer-list reveal">
 
         <li>
           <p class="h4 footer-list-title">Get in touch</p>
@@ -602,7 +689,7 @@
 
       </ul>
 
-      <ul class="footer-list">
+      <ul class="footer-list reveal">
 
         <li>
           <p class="h4 footer-list-title">Locations</p>
@@ -614,7 +701,7 @@
 
       </ul>
 
-      <ul class="social-list">
+      <ul class="social-list reveal">
 
         <li>
           <a href="https://www.instagram.com/farrel_berwyn/" class="social-link">
