@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects Showcase — Farrel Berwyn | AI Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Explore the full portfolio gallery of AI systems, interactive web applications, mobile platforms, and brand technology developed by Farrel Berwyn.">
+  <link rel="stylesheet" href="./assets/css/style.css?v=20260901_v3">
+</head>
+
+<body>
+  <!-- 
+    - #HEADER (Berwynolio Topbar)
+  -->
+  <header class="header" data-header id="site-header">
+    <div class="container">
+
+      <a href="./index.html#hero" class="logo-berwyn" aria-label="Berwynolio Home">Berwynolio</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html#hero" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="./index.html#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+
+          <li>
+            <a href="./index.html#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="./index.html#experience" class="navbar-link" data-nav-link>Experience</a>
+          </li>
+
+          <li>
+            <a href="./projects.html" class="navbar-link active" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-dropdown" data-dropdown>
+            <button class="navbar-link dropdown-toggle" data-dropdown-btn aria-expanded="false" aria-haspopup="true">
+              <span>More</span>
+              <ion-icon name="chevron-down-outline" class="dropdown-icon" aria-hidden="true"></ion-icon>
+            </button>
+
+            <ul class="dropdown-menu" data-dropdown-menu>
+              <li>
+                <a href="./index.html#education" class="dropdown-link" data-nav-link>Education</a>
+              </li>
+              <li>
+                <a href="./index.html#certifications" class="dropdown-link" data-nav-link>Awards</a>
+              </li>
+              <li>
+                <a href="./index.html#organizations" class="dropdown-link" data-nav-link>Leadership</a>
+              </li>
+              <li>
+                <a href="./index.html#blog" class="dropdown-link" data-nav-link>News</a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="./index.html#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="section projects-showcase-section" aria-labelledby="showcase-label">
+      <div class="container">
+
+        <!-- Back to home -->
+        <a href="./index.html#hero" class="back-link reveal">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+          Back to Home
+        </a>
+
+        <!-- Header -->
+        <div class="showcase-header reveal">
+          <p class="section-subtitle" id="showcase-label">Project Gallery</p>
+          <h1 class="h2 section-title">Featured Works & Case Studies</h1>
+          <p class="section-text showcase-intro">
+            A comprehensive showcase of artificial intelligence systems, full-stack web platforms, mobile innovations, and creative tech applications. Click any card to view the case study or jump straight to the live web experience.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="project-filter-bar reveal">
+          <button class="filter-btn is-active" data-filter="all">All Projects (9)</button>
+          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="web">Web & Mobile Platforms</button>
+          <button class="filter-btn" data-filter="brand">Brand & Creative Tech</button>
+        </div>
+
+        <!-- ═══ 3-COLUMN BANNER GRID (Matches Reference Style) ═══ -->
+        <div class="banner-grid-3col" id="projects-grid">
+
+          <!-- Card 1: Dataktif Learn (Live Web & Local Video LMS) -->
+          <article class="banner-card-item reveal" data-category="web">
+            <a href="./dataktif-learn.html" class="banner-card-link" aria-label="View Dataktif Learn Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/dataktif-learn.jpg" alt="Dataktif Learn - Modern Local Video Course" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(230, 85%, 60%), hsl(190, 90%, 50%));">
+                  <span class="pill-icon"><img src="./src/logo/dataktif.jpg" alt="Dataktif" class="pill-icon-img"></span> Local Video LMS
+                </span>
+                <span class="banner-card-live-badge">
+                  <span class="live-pulse"></span> Live Web
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">Dataktif Learn</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="play-circle-outline" title="Video Course"></ion-icon>
+                    <ion-icon name="laptop-outline" title="LMS Platform"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">Modern Local Video Course</p>
+                <div class="banner-card-actions">
+                  <span class="banner-card-quick-live" onclick="event.preventDefault(); window.open('https://farrelberwyn.github.io/Dataktif-Learn/', '_blank');">
+                    <span>Visit Live Site</span>
+                    <ion-icon name="open-outline"></ion-icon>
+                  </span>
+                  <span style="font-size: 1.25rem; color: var(--roman-silver);">View Details &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 2: Senyuman Kids (Live Web) -->
+          <article class="banner-card-item reveal" data-category="brand">
+            <a href="./senyuman-kids.html" class="banner-card-link" aria-label="View Senyuman Kids Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/senyuman-kids.jpg" alt="Senyuman Kids - Fashion kids Brand" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(330, 85%, 55%), hsl(280, 75%, 55%));">
+                  <span class="pill-icon">🧸</span> Fashion Kids
+                </span>
+                <span class="banner-card-live-badge">
+                  <span class="live-pulse"></span> Live Web
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">Senyuman Kids</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="bag-handle-outline" title="E-Commerce"></ion-icon>
+                    <ion-icon name="sparkles-outline" title="Brand Tech"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">Fashion kids Brand & Digital Commerce</p>
+                <div class="banner-card-actions">
+                  <span class="banner-card-quick-live" onclick="event.preventDefault(); window.open('https://farrelberwyn.github.io/Senyuman/', '_blank');">
+                    <span>Visit Live Site</span>
+                    <ion-icon name="open-outline"></ion-icon>
+                  </span>
+                  <span style="font-size: 1.25rem; color: var(--roman-silver);">View Details &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 2: Blurmatix (Live Web) -->
+          <article class="banner-card-item reveal" data-category="brand">
+            <a href="./blurmatix.html" class="banner-card-link" aria-label="View Blurmatix Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/blurmatix.jpg" alt="Blurmatix - Digital Photobooth" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(260, 85%, 60%), hsl(210, 90%, 55%));">
+                  <span class="pill-icon"><img src="./src/logo/blurmatix.png" alt="Blurmatix" class="pill-icon-img"></span> Photobooth
+                </span>
+                <span class="banner-card-live-badge">
+                  <span class="live-pulse"></span> Live Web
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">Blurmatix</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="camera-outline" title="Digital Photobooth"></ion-icon>
+                    <ion-icon name="color-wand-outline" title="Interactive Software"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">Digital Photobooth & Event Software</p>
+                <div class="banner-card-actions">
+                  <span class="banner-card-quick-live" onclick="event.preventDefault(); window.open('https://farrelberwyn.github.io/Blurmatix/', '_blank');">
+                    <span>Visit Live Site</span>
+                    <ion-icon name="open-outline"></ion-icon>
+                  </span>
+                  <span style="font-size: 1.25rem; color: var(--roman-silver);">View Details &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 3: Pavement Pinn (Live Web & AI) -->
+          <article class="banner-card-item reveal" data-category="ai">
+            <a href="./pavement-pinn.html" class="banner-card-link" aria-label="View Pavement Pinn Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/pavement-pinn.jpg" alt="Pavement Pinn - Web & AI Road Defect Detection" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(38, 95%, 50%), hsl(15, 90%, 55%));">
+                  <span class="pill-icon"><img src="./src/logo/pavement-pinn.jpg" alt="Pavement Pinn" class="pill-icon-img"></span> Web & AI
+                </span>
+                <span class="banner-card-live-badge">
+                  <span class="live-pulse"></span> Live Web
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">Pavement Pinn</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="hardware-chip-outline" title="Computer Vision"></ion-icon>
+                    <ion-icon name="sparkles" class="icon-accent" title="AI Road Analysis"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">Web & AI Road Defect Detection</p>
+                <div class="banner-card-actions">
+                  <span class="banner-card-quick-live" onclick="event.preventDefault(); window.open('https://farrelberwyn.github.io/PavementPinn/', '_blank');">
+                    <span>Visit Live Site</span>
+                    <ion-icon name="open-outline"></ion-icon>
+                  </span>
+                  <span style="font-size: 1.25rem; color: var(--roman-silver);">View Details &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 4: Techniqto (Live Community Web) -->
+          <article class="banner-card-item reveal" data-category="web">
+            <a href="./techniqto.html" class="banner-card-link" aria-label="View Techniqto Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/techniqto.jpg" alt="Techniqto - Technology Community Platform" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(205, 90%, 50%), hsl(260, 85%, 60%));">
+                  <span class="pill-icon"><img src="./src/logo/techniqto.jpg" alt="Techniqto" class="pill-icon-img"></span> Community
+                </span>
+                <span class="banner-card-live-badge">
+                  <span class="live-pulse"></span> Live Web
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">Techniqto</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="people-outline" title="Community Hub"></ion-icon>
+                    <ion-icon name="globe-outline" title="Global Platform"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">Technology Community & Hub Platform</p>
+                <div class="banner-card-actions">
+                  <span class="banner-card-quick-live" onclick="event.preventDefault(); window.open('https://web-portofolio-techniqto.vercel.app/', '_blank');">
+                    <span>Visit Live Site</span>
+                    <ion-icon name="open-outline"></ion-icon>
+                  </span>
+                  <span style="font-size: 1.25rem; color: var(--roman-silver);">View Details &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 5: SIAGA -->
+          <article class="banner-card-item reveal" data-category="ai">
+            <a href="./siaga.html" class="banner-card-link" aria-label="View SIAGA Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/portfolio-1.jpg" alt="SIAGA - AI & Reinforcement Learning" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(0, 75%, 55%), hsl(30, 90%, 55%));">
+                  <span class="pill-icon"><img src="./src/logo/opsi.png" alt="SIAGA" class="pill-icon-img"></span> OPSI 2026
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">SIAGA</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="copy-outline" title="Case Study"></ion-icon>
+                    <ion-icon name="sparkles" class="icon-accent" title="AI Powered"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">AI & Reinforcement Learning</p>
+                <div class="banner-card-actions">
+                  <span style="font-size: 1.25rem; color: hsl(210, 95%, 70%);">Explore Research &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 6: I CAN! -->
+          <article class="banner-card-item reveal" data-category="web">
+            <a href="./ican-ssc.html" class="banner-card-link" aria-label="View I CAN! Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/portfolio-2.jpg" alt="I CAN! - Swift Student Challenge Winner" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(210, 80%, 55%), hsl(260, 70%, 60%));">
+                  <span class="pill-icon"><img src="./src/logo/apple.jpg" alt="Apple" class="pill-icon-img"></span> SSC25 Winner
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">I CAN!</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="ribbon-outline" class="icon-award" title="Apple Winner"></ion-icon>
+                    <ion-icon name="logo-apple" title="Swift / iOS"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">Swift Student Challenge</p>
+                <div class="banner-card-actions">
+                  <span style="font-size: 1.25rem; color: hsl(210, 95%, 70%);">Explore iOS App &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 7: PELNI Digital -->
+          <article class="banner-card-item reveal" data-category="web">
+            <a href="./pelni-digital.html" class="banner-card-link" aria-label="View PELNI Digital Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/portfolio-3.jpg" alt="PELNI Digital - Smart National Maritime Ticketing" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(200, 80%, 50%), hsl(170, 70%, 45%));">
+                  <span class="pill-icon"><img src="./src/logo/pelni.png" alt="PELNI" class="pill-icon-img"></span> Maritime
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">PELNI Digital</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="boat-outline" title="Maritime"></ion-icon>
+                    <ion-icon name="shield-checkmark-outline" title="National Infrastructure"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">Smart National Maritime Ticketing</p>
+                <div class="banner-card-actions">
+                  <span style="font-size: 1.25rem; color: hsl(210, 95%, 70%);">Explore Maritime Platform &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+          <!-- Card 8: Jasamall -->
+          <article class="banner-card-item reveal" data-category="ai">
+            <a href="./jasamall.html" class="banner-card-link" aria-label="View Jasamall Project">
+              <div class="banner-card-img-wrap">
+                <img src="./assets/images/portfolio-4.jpg" alt="Jasamall - Intelligent AI Agents Ecosystem" class="img-cover" loading="lazy">
+                <span class="banner-card-badge-pill" style="background: linear-gradient(135deg, hsl(150, 80%, 50%), hsl(190, 70%, 45%));">
+                  <span class="pill-icon"><img src="./src/logo/jasamall.jpg" alt="Jasamall" class="pill-icon-img"></span> Jasamall
+                </span>
+              </div>
+              <div class="banner-card-info">
+                <div class="banner-card-title-row">
+                  <h3 class="banner-card-title">Jasamall</h3>
+                  <div class="banner-card-icons">
+                    <ion-icon name="hardware-chip-outline" title="AI Agents"></ion-icon>
+                    <ion-icon name="git-network-outline" title="Multi-Agent Ecosystem"></ion-icon>
+                  </div>
+                </div>
+                <p class="banner-card-tag">Intelligent Ecosystem</p>
+                <div class="banner-card-actions">
+                  <span style="font-size: 1.25rem; color: hsl(210, 95%, 70%);">Explore AI Agents &rarr;</span>
+                </div>
+              </div>
+            </a>
+          </article>
+
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="showcase-cta-wrap reveal">
+          <div class="showcase-cta-card glass-card">
+            <div class="cta-text-content">
+              <h3 class="h3 cta-title">Have a project in mind?</h3>
+              <p class="section-text">Let's collaborate to build impactful AI systems, high-performance web applications, and cutting-edge digital experiences.</p>
+            </div>
+            <div class="cta-btn-wrap">
+              <a href="mailto:farrel.berwyn18@gmail.com" class="btn has-before">
+                <span class="span">Get in Touch</span>
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+              <a href="./assets/files/FarrelChandraBerwyn_CV.pdf" class="btn-cv" download>
+                <span>Download CV</span>
+                <ion-icon name="download-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2026 <a href="./index.html" class="copyright-link">Farrel Berwyn</a>. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Filter interaction script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.banner-card-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+
+          const filter = btn.getAttribute('data-filter');
+          cards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+              setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(10px)';
+              setTimeout(() => { card.style.display = 'none'; }, 250);
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

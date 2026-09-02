@@ -1,51 +1,132 @@
 [
   {
+    "image": "./assets/images/dataktif-learn.jpg",
+    "title": "Dataktif Learn",
+    "text": "Modern Local Video Course",
+    "link": "./dataktif-learn.html",
+    "liveUrl": "https://farrelberwyn.github.io/Dataktif-Learn/",
+    "badgeTitle": "Dataktif Learn",
+    "badgeSub": "Modern Local Video Course",
+    "category": "web",
+    "categoryLabel": "Local Video LMS",
+    "icon": "🎓",
+    "logo": "./src/logo/dataktif.jpg"
+  },
+  {
     "image": "./assets/images/portfolio-1.jpg",
     "title": "SIAGA",
     "text": "AI & Reinforcement Learning",
     "link": "./siaga.html",
+    "liveUrl": "",
     "badgeTitle": "SIAGA",
-    "badgeSub": "OPSI 2026"
+    "badgeSub": "OPSI 2026",
+    "category": "ai",
+    "categoryLabel": "AI & Machine Learning",
+    "icon": "🚑",
+    "logo": "./src/logo/opsi.png"
   },
   {
     "image": "./assets/images/portfolio-2.jpg",
     "title": "I CAN!",
     "text": "Confidence Building Game",
     "link": "./ican-ssc.html",
+    "liveUrl": "",
     "badgeTitle": "SSC25 Winner",
-    "badgeSub": "Swift Student Challenge"
+    "badgeSub": "Swift Student Challenge",
+    "category": "mobile",
+    "categoryLabel": "Mobile & Swift",
+    "icon": "🏆",
+    "logo": "./src/logo/apple.jpg"
   },
   {
     "image": "./assets/images/portfolio-3.jpg",
     "title": "PELNI Digital",
-    "text": "Smart Maritime App",
+    "text": "Smart Maritime Services Platform",
     "link": "./pelni-digital.html",
-    "badgeTitle": "Smart Ticketing",
-    "badgeSub": "Maritime Services"
+    "liveUrl": "",
+    "badgeTitle": "PELNI Digital",
+    "badgeSub": "Smart National Maritime Ticketing",
+    "category": "web",
+    "categoryLabel": "Digital Platform",
+    "icon": "🚢",
+    "logo": "./src/logo/pelni.png"
+  },
+  {
+    "image": "./assets/images/pavement-pinn.jpg",
+    "title": "Pavement Pinn",
+    "text": "Web & AI Road Defect Detection",
+    "link": "./pavement-pinn.html",
+    "liveUrl": "https://farrelberwyn.github.io/PavementPinn/",
+    "badgeTitle": "Pavement Pinn",
+    "badgeSub": "Web & AI Defect Detection",
+    "category": "ai",
+    "categoryLabel": "AI & Computer Vision",
+    "icon": "🛣️",
+    "logo": "./src/logo/pavement-pinn.jpg"
+  },
+  {
+    "image": "./assets/images/senyuman-kids.jpg",
+    "title": "Senyuman Kids",
+    "text": "Fashion kids Brand & Digital Commerce",
+    "link": "./senyuman-kids.html",
+    "liveUrl": "https://farrelberwyn.github.io/Senyuman/",
+    "badgeTitle": "Senyuman Kids",
+    "badgeSub": "Fashion kids Brand",
+    "category": "brand",
+    "categoryLabel": "Fashion & E-Commerce",
+    "icon": "🧸",
+    "logo": "./src/logo/senyuman.png"
+  },
+  {
+    "image": "./assets/images/blurmatix.jpg",
+    "title": "Blurmatix",
+    "text": "Digital Photobooth & Event Tech",
+    "link": "./blurmatix.html",
+    "liveUrl": "https://farrelberwyn.github.io/Blurmatix/",
+    "badgeTitle": "Blurmatix",
+    "badgeSub": "Digital Photobooth",
+    "category": "creative",
+    "categoryLabel": "Creative Tech & Hardware",
+    "icon": "📸",
+    "logo": "./src/logo/blurmatix.png"
+  },
+  {
+    "image": "./assets/images/techniqto.jpg",
+    "title": "Techniqto",
+    "text": "Technology Community & Hub Platform",
+    "link": "./techniqto.html",
+    "liveUrl": "https://web-portofolio-techniqto.vercel.app/",
+    "badgeTitle": "Techniqto",
+    "badgeSub": "Tech Community Platform",
+    "category": "web",
+    "categoryLabel": "Community & Ecosystem",
+    "icon": "🌐",
+    "logo": "./src/logo/techniqto.jpg"
   },
   {
     "image": "./assets/images/portfolio-4.jpg",
     "title": "Jasamall",
     "text": "One-Stop AI Services",
     "link": "./jasamall.html",
-    "badgeTitle": "10+ AI Agents",
-    "badgeSub": "Intelligent Ecosystem"
+    "liveUrl": "",
+    "badgeTitle": "Jasamall",
+    "badgeSub": "Intelligent Ecosystem",
+    "category": "ai",
+    "categoryLabel": "AI Ecosystem",
+    "icon": "🤖",
+    "logo": "./src/logo/jasamall.jpg"
   },
   {
-    "image": "./assets/images/portfolio-5.jpg",
-    "title": "Mobile-First Web Applications",
-    "text": "React / Node.js / Flutter",
-    "link": "./mobile-apps.html",
-    "badgeTitle": "Mobile-First UI",
-    "badgeSub": "Fully Responsive Layouts"
-  },
-  {
-    "image": "./assets/images/portfolio-6.jpg",
-    "title": "Data-Driven Analytics Dashboard",
-    "text": "Python / SQL / Data Visualization",
-    "link": "./analytics-dashboard.html",
-    "badgeTitle": "Interactive BI",
-    "badgeSub": "Data Visualization"
+    "image": "",
+    "title": "All Projects",
+    "text": "View Projects",
+    "link": "./projects.html",
+    "liveUrl": "./projects.html",
+    "badgeTitle": "All Projects",
+    "badgeSub": "View Projects",
+    "category": "all",
+    "categoryLabel": "Full Gallery",
+    "icon": "✨",
+    "isAllProjects": true
   }
 ]
-

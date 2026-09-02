@@ -4,13 +4,15 @@
       "school": "SMAN 47 Jakarta",
       "major": "Science and Social Studies",
       "date": "2025-2026",
-      "notes": "Academic Average: 85+"
+      "notes": "Academic Average: 85+",
+      "logo": "./src/logo/sman-47.jpg"
     },
     {
       "school": "Senior Secondary Khalifa IMS",
       "major": "Science and Technology",
       "date": "2023-2025",
-      "notes": "10 national curriculum subjects & 6 Cambridge subjects | Completed research on neural networks"
+      "notes": "10 national curriculum subjects & 6 Cambridge subjects | Completed research on neural networks",
+      "logo": "./src/logo/kims.jpg"
     }
   ],
   "experience": [
@@ -20,7 +22,8 @@
       "date": "Agu 2026 - Saat ini · 1 bln",
       "location": "Indonesia · Jarak jauh",
       "notes": "Collaborate with Adobe’s creative ecosystem to deliver scalable design solutions for global creators. Conceptualize and create high-quality, engaging visual templates optimized for diverse digital media needs.",
-      "skills": "Design, Art, Content Creation, Visual Templates"
+      "skills": "Design, Art, Content Creation, Visual Templates",
+      "logo": "./src/logo/adobe.png"
     },
     {
       "role": "Edutech Specialist",
@@ -28,7 +31,8 @@
       "date": "Jun 2026 - Saat ini · 3 bln",
       "location": "Indonesia · Gabungan",
       "notes": "Manage and support the Apple's Swift Coding Club: Focusing on ecosystem adoption for Swift and iOS; Managing class operations, coordinating participants, and ensuring seamless technical execution during training sessions; Drive community engagement and provide technical support to foster a collaborative learning environment for iOS technology.",
-      "skills": "Information Technology, Community, Swift, iOS Ecosystem"
+      "skills": "Information Technology, Community, Swift, iOS Ecosystem",
+      "logo": "./src/logo/GST.png"
     },
     {
       "role": "Mentor in Artificial Intelligence",
@@ -36,7 +40,8 @@
       "date": "Jun 2026 - Saat ini · 3 bln",
       "location": "Di lokasi",
       "notes": "Initialized by the Government of Jakarta serving as a Trainer at Yayasan Sagasitas Indonesia, focusing on Artificial Intelligence education for schools across Indonesia. Delivered training to 45+ schools in 7 provinces, empowering students and educators to build real AI projects. Designing curriculum, mentoring students in hands-on projects, and collaborating with partners such as AWS and Dinas Pendidikan DKI Jakarta to expand access to digital literacy programs.",
-      "skills": "Artificial Intelligence (AI), Mentoring, Curriculum Design, AWS"
+      "skills": "Artificial Intelligence (AI), Mentoring, Curriculum Design, AWS",
+      "logo": "./src/logo/sagasitas.jpg"
     },
     {
       "role": "Project Manager Swift@america",
@@ -44,7 +49,8 @@
       "date": "Jun 2026 - Saat ini · 3 bln",
       "location": "Indonesia · Di lokasi",
       "notes": "Directing program planning, operational execution, and community coordination for Apple Swift developer programs at @america.",
-      "skills": "Creative Ideation, Operations Management, Swift Education"
+      "skills": "Creative Ideation, Operations Management, Swift Education",
+      "logo": "./src/logo/atamerica.jpg"
     }
   ],
   "certifications": [
@@ -80,7 +86,7 @@
       "monthYear": "March 2025",
       "title": "Congrats Swift Student Challenge 2025 nyaa",
       "excerpt": "Menyala Kak Farrel @farrel_berwyn🔥 Keep shining, stay inspiring! ✨🚀",
-      "link": "#"
+      "link": "https://www.instagram.com/reels/DLEzk7INKDb/"
     },
     {
       "image": "./assets/images/blog-2.jpg",
@@ -89,7 +95,7 @@
       "monthYear": "December 2025",
       "title": "Tahun 2025 adalah tahun keemasan anak muda.",
       "excerpt": "Selamat sudah menjadi digital creator muda @farrel_berwyn yang berhasil jadi orang terbaik tahun ini 🙌",
-      "link": "#"
+      "link": "https://www.instagram.com/p/DS49AyoEww7/"
     },
     {
       "image": "./assets/images/blog-3.jpg",
@@ -98,7 +104,7 @@
       "monthYear": "July 2024",
       "title": "Farrel Chandra Berwyn, 16 Tahun, CMO dan Pendiri Startup AI Dataktif",
       "excerpt": "Di usia ketika kebanyakan remaja sibuk dengan aktivitas sekolah dan hobi, Farrel Chandra Berwyn (16) telah menduduki posisi strategis sebagai Chief Marketing Officer (CMO) di Dataktif, startup yang bergerak di bidang kecerdasan buatan (AI) dan analisis data.",
-      "link": "#"
+      "link": "https://www.kompasiana.com/babycharlotte0575/688505f434777c53315bafa2/farrel-chandra-berwyn-16-tahun-cmo-dan-pendiri-startup-ai-dataktif"
     }
   ]
 }

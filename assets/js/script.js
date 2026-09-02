@@ -1,19 +1,27 @@
 'use strict';
 
 /**
- * Ensure default section starts at the very top (Hero section) on initial page load
+ * Ensure main page starts at the very top section (Hero section) on initial page load / open
  */
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 
-if (!window.location.hash || window.location.hash === '#' || window.location.hash === '#hero') {
-  try {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-  } catch (e) {
-    window.scrollTo(0, 0);
+const scrollToTopIfDefault = function () {
+  if (!window.location.hash || window.location.hash === '#' || window.location.hash === '#hero') {
+    try {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    } catch (e) {
+      window.scrollTo(0, 0);
+    }
   }
-}
+};
+
+scrollToTopIfDefault();
+window.addEventListener('DOMContentLoaded', scrollToTopIfDefault);
+window.addEventListener('load', function () {
+  setTimeout(scrollToTopIfDefault, 50);
+});
 
 /**
  * add event listener on multiple elements
@@ -69,39 +77,68 @@ const renderPortfolio = (items) => {
   if (!container || !Array.isArray(items)) return;
   container.innerHTML = '';
   
-  const badges = [
-    { icon: "🚑", title: "SIAGA", sub: "OPSI 2026", grad: "linear-gradient(135deg, hsl(0, 75%, 55%), hsl(30, 90%, 55%))" },
-    { icon: "🏆", title: "SSC25 Winner", sub: "Swift Student Challenge", grad: "linear-gradient(135deg, hsl(210, 80%, 55%), hsl(260, 70%, 60%))" },
-    { icon: "🚢", title: "Smart Ticketing", sub: "Maritime Services", grad: "linear-gradient(135deg, hsl(200, 80%, 50%), hsl(170, 70%, 45%))" },
-    { icon: "🤖", title: "10+ AI Agents", sub: "Intelligent Ecosystem", grad: "linear-gradient(135deg, hsl(150, 80%, 50%), hsl(190, 70%, 45%))" },
-    { icon: "📱", title: "Mobile-First UI", sub: "Fully Responsive Layouts", grad: "linear-gradient(135deg, hsl(280, 80%, 55%), hsl(320, 70%, 50%))" },
-    { icon: "📊", title: "Interactive BI", sub: "Data Visualization", grad: "linear-gradient(135deg, hsl(30, 85%, 50%), hsl(10, 70%, 45%))" }
+  const gradients = [
+    "linear-gradient(135deg, hsl(230, 85%, 60%), hsl(190, 90%, 50%))",
+    "linear-gradient(135deg, hsl(0, 75%, 55%), hsl(30, 90%, 55%))",
+    "linear-gradient(135deg, hsl(210, 80%, 55%), hsl(260, 70%, 60%))",
+    "linear-gradient(135deg, hsl(200, 80%, 50%), hsl(170, 70%, 45%))",
+    "linear-gradient(135deg, hsl(38, 95%, 50%), hsl(15, 90%, 55%))",
+    "linear-gradient(135deg, hsl(330, 85%, 55%), hsl(280, 75%, 55%))",
+    "linear-gradient(135deg, hsl(260, 85%, 60%), hsl(210, 90%, 55%))",
+    "linear-gradient(135deg, hsl(205, 90%, 50%), hsl(260, 85%, 60%))",
+    "linear-gradient(135deg, hsl(150, 80%, 50%), hsl(190, 70%, 45%))"
   ];
 
   items.forEach((item, idx) => {
-    const badge = badges[idx] || { icon: "📁", title: item.badgeTitle || item.title, sub: item.badgeSub || "Project", grad: "linear-gradient(135deg, #333, #555)" };
+    const isAllProjects = item.isAllProjects || item.category === 'all' || item.title.toLowerCase().includes('all project');
     const li = document.createElement('li');
     li.className = `slider-item ${idx === 0 ? 'is-active' : idx === 1 ? 'is-next' : idx === items.length - 1 ? 'is-prev' : 'is-hidden-right'}`;
     li.setAttribute('data-slider-item', '');
     li.setAttribute('data-index', idx);
     
-    li.innerHTML = `
-      <div class="portfolio-grid-card">
-        <div class="portfolio-grid-card__img-wrap">
-          <img src="${item.image}" width="800" height="600" loading="lazy" alt="${item.title}" class="img-cover">
-          
-          <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
-            <div class="portfolio-grid-card__badge-icon" style="background: ${badge.grad};">${badge.icon}</div>
-            <div class="portfolio-grid-card__badge-text">
-              <span class="portfolio-grid-card__badge-title">${badge.title}</span>
-              <span class="portfolio-grid-card__badge-sub">${badge.sub}</span>
+    if (isAllProjects) {
+      li.innerHTML = `
+        <div class="portfolio-grid-card portfolio-grid-card--all-projects">
+          <div class="all-projects-card-inner">
+            <div class="all-projects-icon-wrap">
+              <ion-icon name="grid-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <h3 class="all-projects-title">View Projects</h3>
+            <p class="all-projects-subtitle">
+              <span>Explore All Works</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </p>
+          </div>
+          <a href="${item.link || './projects.html'}" class="layer-link" aria-label="View Projects"></a>
+        </div>
+      `;
+    } else {
+      const icon = item.icon || "✨";
+      const title = item.badgeTitle || item.title;
+      const sub = item.badgeSub || item.text || "Project";
+      const grad = gradients[idx % gradients.length];
+      const iconMarkup = item.logo
+        ? `<div class="portfolio-grid-card__badge-icon is-logo"><img src="${item.logo}" alt="${title}" class="badge-icon-img"></div>`
+        : `<div class="portfolio-grid-card__badge-icon" style="background: ${grad};">${icon}</div>`;
+
+      li.innerHTML = `
+        <div class="portfolio-grid-card">
+          <div class="portfolio-grid-card__img-wrap">
+            <img src="${item.image}" width="800" height="600" loading="lazy" alt="${item.title}" class="img-cover">
+            
+            <div class="portfolio-grid-card__badge" style="background: hsla(0, 0%, 0%, 0.65);">
+              ${iconMarkup}
+              <div class="portfolio-grid-card__badge-text">
+                <span class="portfolio-grid-card__badge-title">${title}</span>
+                <span class="portfolio-grid-card__badge-sub">${sub}</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <a href="${item.link}" class="layer-link" aria-label="View ${item.title}"></a>
-      </div>
-    `;
+          <a href="${item.link}" class="layer-link" aria-label="View ${item.title}"></a>
+        </div>
+      `;
+    }
     container.appendChild(li);
   });
 }
@@ -114,11 +151,35 @@ const renderList = (selector, items, type) => {
     const li = document.createElement('li');
     li.className = 'timeline-card reveal';
     if (type === 'education') {
-      li.innerHTML = `<div class="progress-wrapper"><p class="progress-label" style="font-size: 1.2rem; font-weight: 700;">${entry.school}</p></div><p class="card-text" style="margin-top:10px;"><strong>${entry.major}</strong></p><p class="card-text" style="color:var(--roman-silver);">${entry.date} • ${entry.notes || ''}</p>`;
-    } else if (type === 'experience') {
+      const logoHtml = entry.logo ? `
+        <span class="timeline-logo-wrap">
+          <img src="${entry.logo}" alt="${entry.school}" class="timeline-logo-img">
+        </span>
+      ` : '';
       li.innerHTML = `
-        <div class="progress-wrapper"><p class="progress-label" style="font-size: 1.2rem; font-weight: 700;">${entry.role}</p></div>
-        ${entry.company ? `<p class="card-text" style="margin-top:6px; color:var(--white); font-weight: 600;">${entry.company} ${entry.location ? `• <span style="color:var(--roman-silver); font-weight: 400;">${entry.location}</span>` : ''}</p>` : ''}
+        <div class="progress-wrapper">
+          <div class="timeline-title-row">
+            ${logoHtml}
+            <p class="progress-label">${entry.school}</p>
+          </div>
+        </div>
+        <p class="card-text" style="margin-top:10px;"><strong>${entry.major}</strong></p>
+        <p class="card-text" style="color:var(--roman-silver);">${entry.date} • ${entry.notes || ''}</p>
+      `;
+    } else if (type === 'experience') {
+      const logoHtml = entry.logo ? `
+        <span class="timeline-logo-wrap">
+          <img src="${entry.logo}" alt="${entry.company || entry.role}" class="timeline-logo-img">
+        </span>
+      ` : '';
+      li.innerHTML = `
+        <div class="progress-wrapper">
+          <div class="timeline-title-row">
+            ${logoHtml}
+            <p class="progress-label">${entry.role}</p>
+          </div>
+        </div>
+        ${entry.company ? `<p class="card-text" style="margin-top:8px; color:var(--white); font-weight: 600;">${entry.company} ${entry.location ? `• <span style="color:var(--roman-silver); font-weight: 400;">${entry.location}</span>` : ''}</p>` : ''}
         <p class="card-text" style="color:var(--roman-silver); margin-top:4px; font-size:1.4rem;">${entry.date}</p>
         <p class="card-text" style="margin-top:10px; color:var(--roman-silver);">${entry.notes || ''}</p>
         ${entry.skills ? `<p class="card-text" style="margin-top:8px; font-size:1.35rem; color:hsla(0, 0%, 100%, 0.75);"><span style="color:var(--white); font-weight:600;">Keahlian:</span> ${entry.skills}</p>` : ''}
@@ -139,10 +200,14 @@ const renderBlog = (items) => {
   items.forEach(entry => {
     const li = document.createElement('li');
     li.className = 'reveal';
+    const isExternal = entry.link && entry.link.startsWith('http');
+    const targetAttr = isExternal ? 'target="_blank" rel="noopener noreferrer"' : '';
     li.innerHTML = `
       <div class="blog-card">
         <figure class="card-banner img-holder" style="--width:700; --height:470;">
-          <img src="${entry.image}" width="700" height="470" loading="lazy" alt="${entry.alt}" class="img-cover">
+          <a href="${entry.link}" ${targetAttr} style="display: block; width: 100%; height: 100%;">
+            <img src="${entry.image}" width="700" height="470" loading="lazy" alt="${entry.alt}" class="img-cover">
+          </a>
         </figure>
         <div class="card-content">
           <time class="time" datetime="${entry.date || ''}">
@@ -150,9 +215,11 @@ const renderBlog = (items) => {
             ${entry.monthYear}
           </time>
           <div>
-            <h3 class="h3 card-title">${entry.title}</h3>
+            <h3 class="h3 card-title">
+              <a href="${entry.link}" ${targetAttr}>${entry.title}</a>
+            </h3>
             <p class="card-text">${entry.excerpt}</p>
-            <a href="${entry.link}" class="btn has-before"><span class="span">Read more</span><ion-icon name="arrow-forward"></ion-icon></a>
+            <a href="${entry.link}" ${targetAttr} class="btn has-before"><span class="span">Read more</span><ion-icon name="arrow-forward"></ion-icon></a>
           </div>
         </div>
       </div>
@@ -171,6 +238,25 @@ const loadAndRender = async () => {
     renderList('[data-cert-list]', contentData.certifications, 'cert');
     renderList('[data-org-list]', contentData.organizations, 'organizations');
     renderBlog(contentData.blog);
+  }
+
+  // If page loaded with an anchor hash, adjust scroll position after DOM items render
+  if (window.location.hash) {
+    if (window.location.hash === '#hero' || window.location.hash === '#') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    } else {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        setTimeout(() => {
+          const headerOffset = 85;
+          const elemTop = target.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+            top: Math.max(0, elemTop - headerOffset),
+            behavior: 'smooth'
+          });
+        }, 80);
+      }
+    }
   }
 }
 
@@ -197,7 +283,7 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
 
 const navLinks = document.querySelectorAll("[data-nav-link]");
 navLinks.forEach(link => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
     if (navbar && navbar.classList.contains("active")) {
       toggleNavbar();
     }
@@ -207,6 +293,44 @@ navLinks.forEach(link => {
       dropdown.classList.remove("active");
       const btn = dropdown.querySelector("[data-dropdown-btn]");
       if (btn) btn.setAttribute("aria-expanded", "false");
+    }
+
+    // Smooth scroll for anchor targets on main page
+    const href = link.getAttribute("href");
+    if (!href) return;
+    const hashIndex = href.indexOf('#');
+    if (hashIndex !== -1) {
+      const hash = href.substring(hashIndex);
+      if (hash === '#hero' || hash === '#') {
+        e.preventDefault();
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        if (history.pushState) history.pushState(null, null, window.location.pathname);
+      } else {
+        const target = document.querySelector(hash);
+        if (target) {
+          e.preventDefault();
+          const headerOffset = 85;
+          const elemTop = target.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+            top: Math.max(0, elemTop - headerOffset),
+            behavior: 'smooth'
+          });
+          if (history.pushState) history.pushState(null, null, hash);
+        }
+      }
+    }
+  });
+});
+
+// Logo click handler to always return to topmost section (top: 0)
+const logoLinks = document.querySelectorAll(".logo-berwyn");
+logoLinks.forEach(logo => {
+  logo.addEventListener("click", (e) => {
+    const isMainPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+    if (isMainPage) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      if (history.pushState) history.pushState(null, null, window.location.pathname);
     }
   });
 });
